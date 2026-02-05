@@ -1,0 +1,3522 @@
+[
+  {
+    "theme": "1. Chủ đề Gia đình & Đại từ nhân xưng",
+    "words": [
+      {
+        "hanzi": "妈妈",
+        "pinyin": "māma",
+        "hanviet": "Mẫu thân",
+        "meaning": "Mẹ",
+        "example": "你爸爸 (Ba của bạn)",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "爸爸",
+        "pinyin": "bàba",
+        "hanviet": "Phụ thân",
+        "meaning": "Bố",
+        "example": "你爸爸 (Ba của bạn)",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "哥哥",
+        "pinyin": "gēge",
+        "hanviet": "Ca ca",
+        "meaning": "Anh trai",
+        "example": "大哥 (Anh hai/Đại ca)",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "弟弟",
+        "pinyin": "dìdi",
+        "hanviet": "Đệ đệ",
+        "meaning": "Em trai",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "妹妹",
+        "pinyin": "mèimei",
+        "hanviet": "Muội muội",
+        "meaning": "Em gái",
+        "example": "妹妹很美 (Em gái rất đẹp)",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "你",
+        "pinyin": "nǐ",
+        "hanviet": "Nhĩ",
+        "meaning": "Bạn",
+        "example": "你叫什么名字？ (Bạn tên gì?)",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "我",
+        "pinyin": "wǒ",
+        "hanviet": "Ngã",
+        "meaning": "Tôi",
+        "example": "这是我的书 (Đây là sách của tôi)",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "他",
+        "pinyin": "tā",
+        "hanviet": "Tha",
+        "meaning": "Anh ấy",
+        "example": "他爱他 (Anh ấy yêu cô ấy)",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "她",
+        "pinyin": "tā",
+        "hanviet": "Tha",
+        "meaning": "Cô ấy",
+        "example": "她也学习汉语 (Cô ấy cũng học tiếng Hán)",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "您",
+        "pinyin": "nín",
+        "hanviet": "Nhẫm",
+        "meaning": "Ngài, ông, bà",
+        "example": "(Chào hỏi trang trọng)",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "谁",
+        "pinyin": "shuí / shéi",
+        "hanviet": "Thùy",
+        "meaning": "Ai",
+        "example": "他是谁？ (Anh ấy là ai?)",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "父母",
+        "pinyin": "fùmǔ",
+        "hanviet": "Phụ mẫu",
+        "meaning": "Cha mẹ",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "儿子",
+        "pinyin": "érzi",
+        "hanviet": "Nhi tử",
+        "meaning": "Con trai",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "女儿",
+        "pinyin": "nǚ’ér",
+        "hanviet": "Nữ nhi",
+        "meaning": "Con gái",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "老公",
+        "pinyin": "lǎogōng",
+        "hanviet": "Lão công",
+        "meaning": "Chồng",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "孩子",
+        "pinyin": "háizi",
+        "hanviet": "Hài tử",
+        "meaning": "Con cái",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "姐姐",
+        "pinyin": "jiějie",
+        "hanviet": "Thư thư / Giải giải",
+        "meaning": "Chị gái",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      }
+    ]
+  },
+  {
+    "theme": "2. Chủ đề Hành động & Trạng thái",
+    "words": [
+      {
+        "hanzi": "爱",
+        "pinyin": "ài",
+        "hanviet": "Ái",
+        "meaning": "Yêu",
+        "example": "我爱他 (Tôi yêu anh ấy)",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "跑",
+        "pinyin": "pǎo",
+        "hanviet": "Bào",
+        "meaning": "Chạy",
+        "example": "(Động từ chỉ hoạt động)",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "买",
+        "pinyin": "mǎi",
+        "hanviet": "Mãi",
+        "meaning": "Mua",
+        "example": "你买汉语书吗？ (Bạn mua sách tiếng Hán không?)",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "喝",
+        "pinyin": "hē",
+        "hanviet": "Hát",
+        "meaning": "Uống",
+        "example": "喝咖啡 (Uống cà phê)",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "去",
+        "pinyin": "qù",
+        "hanviet": "Khứ",
+        "meaning": "Đi",
+        "example": "他不去 (Anh ấy không đi)",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "学/学习",
+        "pinyin": "xué / xuéxí",
+        "hanviet": "Học / Học tập",
+        "meaning": "Học",
+        "example": "我在学校学汉语 (Tôi học tiếng Hán ở trường)",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "看",
+        "pinyin": "kàn",
+        "hanviet": "Khán",
+        "meaning": "Xem, nhìn, đọc",
+        "example": "看报纸 (Đọc báo)",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "忙",
+        "pinyin": "máng",
+        "hanviet": "Mang",
+        "meaning": "Bận",
+        "example": "你忙吗？ (Bạn bận không?)",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "大",
+        "pinyin": "dà",
+        "hanviet": "Đại",
+        "meaning": "Lớn",
+        "example": "不大 (Không lớn)",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "认识",
+        "pinyin": "rènshi",
+        "hanviet": "Nhận thức",
+        "meaning": "Biết, quen biết",
+        "example": "很高兴认识您 (Rất vui được quen biết ngài)",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "觉得",
+        "pinyin": "juéde",
+        "hanviet": "Giác đắc",
+        "meaning": "Cảm thấy",
+        "example": "你觉得怎么样？ (Bạn cảm thấy thế nào?)",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "喜欢",
+        "pinyin": "xǐhuan",
+        "hanviet": "Hỉ hoan",
+        "meaning": "Thích",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "有",
+        "pinyin": "yǒu",
+        "hanviet": "Hữu",
+        "meaning": "Có",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "没有",
+        "pinyin": "méiyǒu",
+        "hanviet": "Mạt hữu",
+        "meaning": "Không có",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "知道",
+        "pinyin": "zhīdao",
+        "hanviet": "Tri đạo",
+        "meaning": "Biết (thông tin)",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "会",
+        "pinyin": "huì",
+        "hanviet": "Hội",
+        "meaning": "Biết (thông thạo)",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "玩",
+        "pinyin": "wán",
+        "hanviet": "Ngoạn",
+        "meaning": "Chơi",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "想",
+        "pinyin": "xiǎng",
+        "hanviet": "Tưởng",
+        "meaning": "Muốn, nhớ",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "休息",
+        "pinyin": "xiūxi",
+        "hanviet": "Hưu tức",
+        "meaning": "Nghỉ ngơi",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "工作",
+        "pinyin": "gōngzuò",
+        "hanviet": "Công tác",
+        "meaning": "Công việc",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "开车",
+        "pinyin": "kāichē",
+        "hanviet": "Khai xa",
+        "meaning": "Lái xe",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "上课",
+        "pinyin": "shàngkè",
+        "hanviet": "Thượng khóa",
+        "meaning": "Đi học, lên lớp",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "在",
+        "pinyin": "zài",
+        "hanviet": "Tại",
+        "meaning": "Ở, tại",
+        "example": "我在学校 (Tôi ở trường học)",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "睡觉",
+        "pinyin": "shuìjiào",
+        "hanviet": "Thụy giác",
+        "meaning": "Ngủ",
+        "example": "",
+        "note": "có thể bỏ jiào",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "要",
+        "pinyin": "yào",
+        "hanviet": "Yếu",
+        "meaning": "Muốn, cần",
+        "example": "我要买苹果 (Tôi muốn mua táo)",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "问",
+        "pinyin": "wèn",
+        "hanviet": "Vấn",
+        "meaning": "Hỏi",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "回答",
+        "pinyin": "huídá",
+        "hanviet": "Hồi đáp",
+        "meaning": "Trả lời",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "笑",
+        "pinyin": "xiào",
+        "hanviet": "Tiếu",
+        "meaning": "Cười",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "说话",
+        "pinyin": "shuōhuà",
+        "hanviet": "Thuyết thoại",
+        "meaning": "Nói chuyện",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "介绍",
+        "pinyin": "jièshào",
+        "hanviet": "Giới thiệu",
+        "meaning": "Giới thiệu",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "叫",
+        "pinyin": "jiào",
+        "hanviet": "Khiếu",
+        "meaning": "Tên là, gọi là",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "做",
+        "pinyin": "zuò",
+        "hanviet": "Tác",
+        "meaning": "Làm",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "坐",
+        "pinyin": "zuò",
+        "hanviet": "Tọa",
+        "meaning": "Ngồi",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "用",
+        "pinyin": "yòng",
+        "hanviet": "Dụng",
+        "meaning": "Dùng",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "等",
+        "pinyin": "děng",
+        "hanviet": "Đẳng",
+        "meaning": "Đợi",
+        "example": "等一下 (Đợi một chút)",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "找",
+        "pinyin": "zhǎo",
+        "hanviet": "Trảo",
+        "meaning": "Tìm, thối (tiền)",
+        "example": "找钱 (Thối tiền)",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "吃",
+        "pinyin": "chī",
+        "hanviet": "Ngật",
+        "meaning": "Ăn",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "买",
+        "pinyin": "mài",
+        "hanviet": "Mại",
+        "meaning": "Bán",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "累",
+        "pinyin": "lèi",
+        "hanviet": "Luy",
+        "meaning": "Mệt",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "怕",
+        "pinyin": "pà",
+        "hanviet": "Phạ",
+        "meaning": "Sợ",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "来",
+        "pinyin": "lái",
+        "hanviet": "Lai",
+        "meaning": "Đến",
+        "example": "他们都来了 (Họ đều đến rồi)",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      }
+    ]
+  },
+  {
+    "theme": "3. Chủ đề Số đếm & Thời gian",
+    "words": [
+      {
+        "hanzi": "一",
+        "pinyin": "yī",
+        "hanviet": "Nhất",
+        "meaning": "Số 1",
+        "example": "(Số đếm cơ bản)",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "二",
+        "pinyin": "èr",
+        "hanviet": "Nhị",
+        "meaning": "Số 2",
+        "example": "(Số đếm cơ bản)",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "三",
+        "pinyin": "sān",
+        "hanviet": "Tam",
+        "meaning": "Số 3",
+        "example": "(Số đếm cơ bản)",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "四",
+        "pinyin": "sì",
+        "hanviet": "Tứ",
+        "meaning": "Số 4",
+        "example": "(Số đếm cơ bản)",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "五",
+        "pinyin": "wǔ",
+        "hanviet": "Ngũ",
+        "meaning": "Số 5",
+        "example": "(Số đếm cơ bản)",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "六",
+        "pinyin": "liù",
+        "hanviet": "Lục",
+        "meaning": "Số 6",
+        "example": "(Số đếm cơ bản)",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "七",
+        "pinyin": "qī",
+        "hanviet": "Thất",
+        "meaning": "Số 7",
+        "example": "(Số đếm cơ bản)",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "八",
+        "pinyin": "bā",
+        "hanviet": "Bát",
+        "meaning": "Số 8",
+        "example": "(Số đếm cơ bản)",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "九",
+        "pinyin": "jiǔ",
+        "hanviet": "Cửu",
+        "meaning": "Số 9",
+        "example": "(Số đếm cơ bản)",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "十",
+        "pinyin": "shí",
+        "hanviet": "Thập",
+        "meaning": "Số 10",
+        "example": "(Số đếm cơ bản)",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "几",
+        "pinyin": "jǐ",
+        "hanviet": "Kỷ",
+        "meaning": "Mấy, vài",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "星期",
+        "pinyin": "xīngqī",
+        "hanviet": "Tinh kỳ",
+        "meaning": "Tuần, Thứ",
+        "example": "星期一 (Thứ Hai)",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "月",
+        "pinyin": "yuè",
+        "hanviet": "Nguyệt",
+        "meaning": "Tháng, trăng",
+        "example": "三月 (Tháng Ba)",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "日/天",
+        "pinyin": "rì / tiān",
+        "hanviet": "Nhật / Thiên",
+        "meaning": "Ngày",
+        "example": "星期天 (Chủ nhật)",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "年",
+        "pinyin": "nián",
+        "hanviet": "Niên",
+        "meaning": "Năm",
+        "example": "今年 (Năm nay)",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "点",
+        "pinyin": "diǎn",
+        "hanviet": "Điểm",
+        "meaning": "Giờ",
+        "example": "现在几点？ (Bây giờ mấy giờ?)",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "今天",
+        "pinyin": "jīntiān",
+        "hanviet": "Kim thiên",
+        "meaning": "Hôm nay",
+        "example": "(Từ chỉ thời gian)",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "明天",
+        "pinyin": "míngtiān",
+        "hanviet": "Minh thiên",
+        "meaning": "Ngày mai",
+        "example": "明天见 (Ngày mai gặp)",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "现在",
+        "pinyin": "xiànzài",
+        "hanviet": "Hiện tại",
+        "meaning": "Bây giờ, hiện tại",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "早上/早晨",
+        "pinyin": "zǎoshang / zǎochén",
+        "hanviet": "Tảo thượng / Tảo thần",
+        "meaning": "Sáng sớm",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "上午",
+        "pinyin": "shàngwǔ",
+        "hanviet": "Thượng ngọ",
+        "meaning": "Buổi sáng",
+        "example": "(Từ chỉ thời gian)",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "中午",
+        "pinyin": "zhōngwǔ",
+        "hanviet": "Trung ngọ",
+        "meaning": "Buổi trưa",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "下午",
+        "pinyin": "xiàwǔ",
+        "hanviet": "Hạ ngọ",
+        "meaning": "Buổi chiều",
+        "example": "(Từ chỉ thời gian)",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "晚上",
+        "pinyin": "wǎnshang",
+        "hanviet": "Vãn thượng",
+        "meaning": "Buổi tối",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "时候",
+        "pinyin": "shíhou",
+        "hanviet": "Thời hậu",
+        "meaning": "Lúc, khi",
+        "example": "什么时候 (Khi nào?)",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "时间",
+        "pinyin": "shíjiān",
+        "hanviet": "Thời gian",
+        "meaning": "Thời gian",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "次",
+        "pinyin": "cì",
+        "hanviet": "Thứ",
+        "meaning": "Lần",
+        "example": "第一次 (Lần đầu tiên)",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "第一",
+        "pinyin": "dì yī",
+        "hanviet": "Đệ nhất",
+        "meaning": "Thứ nhất",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      }
+    ]
+  },
+  {
+    "theme": "4. Chủ đề Địa điểm & Phương hướng",
+    "words": [
+      {
+        "hanzi": "哪里/哪儿",
+        "pinyin": "nǎlǐ / nǎr",
+        "hanviet": "Na lý / Na nhi",
+        "meaning": "Đâu, nơi đâu",
+        "example": "你去哪里？ (Bạn đi đâu?)",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "这里/这儿",
+        "pinyin": "zhèlǐ / zhèr",
+        "hanviet": "Giá lý / Giá nhi",
+        "meaning": "Ở đây",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "那里/那儿",
+        "pinyin": "nàlǐ / nàr",
+        "hanviet": "Na lý / Na nhi",
+        "meaning": "Ở đó, ở kia",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "家",
+        "pinyin": "jiā",
+        "hanviet": "Gia",
+        "meaning": "Nhà",
+        "example": "回老家 (Về quê)",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "学校",
+        "pinyin": "xuéxiào",
+        "hanviet": "Học hiệu",
+        "meaning": "Trường học",
+        "example": "去学校学汉语 (Đi đến trường học tiếng Hán)",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "中国",
+        "pinyin": "Zhōngguó",
+        "hanviet": "Trung Quốc",
+        "meaning": "Trung Quốc",
+        "example": "中国朋友 (Bạn người Trung Quốc)",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "银行",
+        "pinyin": "yínháng",
+        "hanviet": "Ngân hàng",
+        "meaning": "Ngân hàng",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "医院",
+        "pinyin": "yīyuàn",
+        "hanviet": "Y viện",
+        "meaning": "Bệnh viện",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "饭店/饭馆",
+        "pinyin": "fàndiàn / fànguǎn",
+        "hanviet": "Phạn điếm / Phạn quán",
+        "meaning": "Nhà hàng, tiệm cơm",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "商店",
+        "pinyin": "shāngdiàn",
+        "hanviet": "Thương điếm",
+        "meaning": "Cửa hàng",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "店",
+        "pinyin": "diàn",
+        "hanviet": "Điếm",
+        "meaning": "Tiệm, cửa hàng",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "大学",
+        "pinyin": "dàxué",
+        "hanviet": "Đại học",
+        "meaning": "Đại học",
+        "example": "读大学 (Học đại học)",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      }
+    ]
+  },
+  {
+    "theme": "5. Chủ đề Ăn uống & Mua sắm",
+    "words": [
+      {
+        "hanzi": "咖啡",
+        "pinyin": "kāfēi",
+        "hanviet": "Gia phi",
+        "meaning": "Cà phê",
+        "example": "喝咖啡很好喝 (Uống cà phê rất ngon)",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "茶",
+        "pinyin": "chá",
+        "hanviet": "Trà",
+        "meaning": "Trà",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "奶茶",
+        "pinyin": "nǎichá",
+        "hanviet": "Nãi trà",
+        "meaning": "Trà sữa",
+        "example": "你喜欢茶还是奶茶？ (Bạn thích trà hay trà sữa?)",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "水",
+        "pinyin": "shuǐ",
+        "hanviet": "Thủy",
+        "meaning": "Nước",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "可乐",
+        "pinyin": "kělè",
+        "hanviet": "Khả lạc",
+        "meaning": "Coca-Cola",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "红牛",
+        "pinyin": "hóngniú",
+        "hanviet": "Hồng ngưu",
+        "meaning": "Red Bull",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "啤酒",
+        "pinyin": "píjiǔ",
+        "hanviet": "Ty tửu",
+        "meaning": "Bia",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "酒",
+        "pinyin": "jiǔ",
+        "hanviet": "Tửu",
+        "meaning": "Rượu",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "饮料",
+        "pinyin": "yǐnliào",
+        "hanviet": "Ẩm liệu",
+        "meaning": "Đồ uống",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "饭",
+        "pinyin": "fàn",
+        "hanviet": "Phạn",
+        "meaning": "Cơm",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "面条儿",
+        "pinyin": "miàntiáor",
+        "hanviet": "Miến điều nhi",
+        "meaning": "Mì",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "饺子",
+        "pinyin": "jiǎozi",
+        "hanviet": "Giảo tử",
+        "meaning": "Bánh chẻo",
+        "example": "买饺子 (Mua bánh chẻo)",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "包子",
+        "pinyin": "bāozi",
+        "hanviet": "Bao tử",
+        "meaning": "Bánh bao",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "馒头",
+        "pinyin": "mántou",
+        "hanviet": "Mạn đầu",
+        "meaning": "Màn thầu (bánh mì hấp)",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "点心",
+        "pinyin": "diǎnxīn",
+        "hanviet": "Điểm tâm",
+        "meaning": "Điểm tâm",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "面包",
+        "pinyin": "miànbāo",
+        "hanviet": "Diện bao",
+        "meaning": "Bánh mì",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "粥",
+        "pinyin": "zhōu",
+        "hanviet": "Chúc",
+        "meaning": "Cháo",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "鸡蛋",
+        "pinyin": "jīdàn",
+        "hanviet": "Kê đản",
+        "meaning": "Trứng gà",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "牛肉粉",
+        "pinyin": "niúròufěn",
+        "hanviet": "Ngưu nhục phấn",
+        "meaning": "Phở bò",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "北京烤鸭",
+        "pinyin": "Běijīng kǎoyā",
+        "hanviet": "Bắc Kinh khảo áp",
+        "meaning": "Vịt quay Bắc Kinh",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "火锅",
+        "pinyin": "huǒguō",
+        "hanviet": "Hỏa oa",
+        "meaning": "Lẩu",
+        "example": "你们有什么火锅？ (Các bạn có lẩu gì?)",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "菜单",
+        "pinyin": "càidān",
+        "hanviet": "Thái đơn",
+        "meaning": "Thực đơn, Menu",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "菜",
+        "pinyin": "cài",
+        "hanviet": "Thái",
+        "meaning": "Món ăn, rau",
+        "example": "点菜 (Gọi món)",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "汤",
+        "pinyin": "tāng",
+        "hanviet": "Thang",
+        "meaning": "Canh",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "牛肉",
+        "pinyin": "niúròu",
+        "hanviet": "Ngưu nhục",
+        "meaning": "Thịt bò",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "羊肉",
+        "pinyin": "yángròu",
+        "hanviet": "Dương nhục",
+        "meaning": "Thịt dê",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "海鲜",
+        "pinyin": "hǎixiān",
+        "hanviet": "Hải tiên",
+        "meaning": "Hải sản",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "苹果",
+        "pinyin": "píngguǒ",
+        "hanviet": "Bình quả",
+        "meaning": "Táo",
+        "example": "苹果一斤多少钱？ (Táo bao nhiêu tiền một cân?)",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "西瓜",
+        "pinyin": "xīguā",
+        "hanviet": "Tây qua",
+        "meaning": "Dưa hấu",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "香蕉",
+        "pinyin": "xiāngjiāo",
+        "hanviet": "Hương tiêu",
+        "meaning": "Chuối",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "水果",
+        "pinyin": "shuǐguǒ",
+        "hanviet": "Thủy quả",
+        "meaning": "Trái cây",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "芒果",
+        "pinyin": "mángguǒ",
+        "hanviet": "Mang quả",
+        "meaning": "Xoài",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "火龙果",
+        "pinyin": "huǒlóngguǒ",
+        "hanviet": "Hỏa long quả",
+        "meaning": "Thanh long",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "草莓",
+        "pinyin": "cǎoméi",
+        "hanviet": "Thảo mai",
+        "meaning": "Dâu tây",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "黄瓜",
+        "pinyin": "huángguā",
+        "hanviet": "Hoàng qua",
+        "meaning": "Dưa leo",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "红毛丹",
+        "pinyin": "hóngmáodān",
+        "hanviet": "Hồng mao đan",
+        "meaning": "Chôm chôm",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "葡萄",
+        "pinyin": "pútáo",
+        "hanviet": "Bồ đào",
+        "meaning": "Nho",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "牛油果",
+        "pinyin": "niúyóuguǒ",
+        "hanviet": "Ngưu du quả",
+        "meaning": "Bơ",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "人心果",
+        "pinyin": "rénxīnguǒ",
+        "hanviet": "Nhân tâm quả",
+        "meaning": "Sapoche (Hồng xiêm)",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "椰子",
+        "pinyin": "yēzi",
+        "hanviet": "Da tử",
+        "meaning": "Dừa",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "西红柿",
+        "pinyin": "xīhóngshì",
+        "hanviet": "Tây hồng thị",
+        "meaning": "Cà chua",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "土豆",
+        "pinyin": "tǔdòu",
+        "hanviet": "Thổ đậu",
+        "meaning": "Khoai tây",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "多少",
+        "pinyin": "duōshǎo",
+        "hanviet": "Đa thiểu",
+        "meaning": "Bao nhiêu",
+        "example": "一共多少钱？ (Tổng cộng bao nhiêu tiền?)",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "贵",
+        "pinyin": "guì",
+        "hanviet": "Quý",
+        "meaning": "Đắt",
+        "example": "太贵了 (Đắt quá)",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "便宜",
+        "pinyin": "piányi",
+        "hanviet": "Tiện nghi",
+        "meaning": "Rẻ",
+        "example": "便宜一点儿吧 (Rẻ chút đi)",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "一共",
+        "pinyin": "yígòng",
+        "hanviet": "Nhất cộng",
+        "meaning": "Tổng cộng",
+        "example": "一共多少钱？ (Tổng cộng bao nhiêu tiền?)",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "钱",
+        "pinyin": "qián",
+        "hanviet": "Tiền",
+        "meaning": "Tiền",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "元/块",
+        "pinyin": "yuán / kuài",
+        "hanviet": "Nguyên / Khối",
+        "meaning": "Đồng (Tệ)",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "毛",
+        "pinyin": "máo",
+        "hanviet": "Mao",
+        "meaning": "Hào",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "分",
+        "pinyin": "fēn",
+        "hanviet": "Phân",
+        "meaning": "Xu",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "斤",
+        "pinyin": "jīn",
+        "hanviet": "Cân",
+        "meaning": "Cân (nửa kí)",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "公斤",
+        "pinyin": "gōngjīn",
+        "hanviet": "Công cân",
+        "meaning": "Kí",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      }
+    ]
+  },
+  {
+    "theme": "6. Chủ đề Đồ vật & Cuộc sống",
+    "words": [
+      {
+        "hanzi": "书",
+        "pinyin": "shū",
+        "hanviet": "Thư",
+        "meaning": "Sách",
+        "example": "这是我的汉语书 (Đây là sách tiếng Hán của tôi)",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "笔",
+        "pinyin": "bǐ",
+        "hanviet": "Bút",
+        "meaning": "Bút, cây viết",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "报纸",
+        "pinyin": "bàozhǐ",
+        "hanviet": "Báo chỉ",
+        "meaning": "Báo",
+        "example": "看报纸 (Đọc báo)",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "汉字",
+        "pinyin": "hànzì",
+        "hanviet": "Hán tự",
+        "meaning": "Chữ Hán",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "电脑",
+        "pinyin": "diànnǎo",
+        "hanviet": "Điện não",
+        "meaning": "Máy vi tính",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "手机",
+        "pinyin": "shǒujī",
+        "hanviet": "Thủ cơ",
+        "meaning": "Điện thoại di động",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "电视",
+        "pinyin": "diànshì",
+        "hanviet": "Điện thị",
+        "meaning": "TV, truyền hình",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "衣服",
+        "pinyin": "yīfu",
+        "hanviet": "Y phục",
+        "meaning": "Quần áo",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "椅子",
+        "pinyin": "yǐzi",
+        "hanviet": "Ỷ tử",
+        "meaning": "Cái ghế",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "桌子",
+        "pinyin": "zhuōzi",
+        "hanviet": "Trác tử",
+        "meaning": "Cái bàn",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "东西",
+        "pinyin": "dōngxi",
+        "hanviet": "Đông tây",
+        "meaning": "Đồ vật, thứ",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "马",
+        "pinyin": "mǎ",
+        "hanviet": "Mã",
+        "meaning": "Con ngựa",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "猫",
+        "pinyin": "māo",
+        "hanviet": "Miêu",
+        "meaning": "Con mèo",
+        "example": "(只) 猫",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "飞机",
+        "pinyin": "fēijī",
+        "hanviet": "Phi cơ",
+        "meaning": "Máy bay",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "火车",
+        "pinyin": "huǒchē",
+        "hanviet": "Hỏa xa",
+        "meaning": "Xe lửa, tàu lửa",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "车",
+        "pinyin": "chē",
+        "hanviet": "Xa",
+        "meaning": "Xe",
+        "example": "开车 (Lái xe)",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "网站",
+        "pinyin": "wǎngzhàn",
+        "hanviet": "Võng trạm",
+        "meaning": "Trang web",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      }
+    ]
+  },
+  {
+    "theme": "7. Chủ đề Tính từ & Phó từ",
+    "words": [
+      {
+        "hanzi": "很",
+        "pinyin": "hěn",
+        "hanviet": "Ngận",
+        "meaning": "Rất",
+        "example": "都很很好 (Đều rất tốt)",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "太",
+        "pinyin": "tài",
+        "hanviet": "Thái",
+        "meaning": "Quá",
+        "example": "太贵了 (Đắt quá)",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "都",
+        "pinyin": "dōu",
+        "hanviet": "Đô",
+        "meaning": "Đều",
+        "example": "他们都来了 (Họ đều đến rồi)",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "也",
+        "pinyin": "yě",
+        "hanviet": "Dã",
+        "meaning": "Cũng",
+        "example": "我也喝咖啡 (Tôi cũng uống cà phê)",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "还",
+        "pinyin": "hái",
+        "hanviet": "Hoàn",
+        "meaning": "Vẫn, còn",
+        "example": "还没 (Vẫn chưa)",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "不",
+        "pinyin": "bù",
+        "hanviet": "Bất",
+        "meaning": "Không (phủ định)",
+        "example": "不大 (Không lớn)",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "没",
+        "pinyin": "méi",
+        "hanviet": "Mạt",
+        "meaning": "Không, chưa",
+        "example": "没有 (Không có)",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "白",
+        "pinyin": "bái",
+        "hanviet": "Bạch",
+        "meaning": "Màu trắng",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "好",
+        "pinyin": "hǎo",
+        "hanviet": "Hảo",
+        "meaning": "Tốt, ngon, được",
+        "example": "很好喝 (Uống rất ngon)",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "难",
+        "pinyin": "nán",
+        "hanviet": "Nan",
+        "meaning": "Khó",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "男",
+        "pinyin": "nán",
+        "hanviet": "Nam",
+        "meaning": "Nam, trai",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "女",
+        "pinyin": "nǚ",
+        "hanviet": "Nữ",
+        "meaning": "Nữ, gái",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "漂亮",
+        "pinyin": "piàoliang",
+        "hanviet": "Phiếu lượng",
+        "meaning": "Rất đẹp",
+        "example": "妹妹很美 (Em gái rất đẹp)",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "高兴",
+        "pinyin": "gāoxìng",
+        "hanviet": "Cao hứng",
+        "meaning": "Vui vẻ, vui mừng",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "热",
+        "pinyin": "rè",
+        "hanviet": "Nhiệt",
+        "meaning": "Nóng",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "冷",
+        "pinyin": "lěng",
+        "hanviet": "Lãnh",
+        "meaning": "Lạnh",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "多",
+        "pinyin": "duō",
+        "hanviet": "Đa",
+        "meaning": "Nhiều",
+        "example": "多钱？ (Bao nhiêu tiền?)",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "少",
+        "pinyin": "shǎo",
+        "hanviet": "Thiểu",
+        "meaning": "Ít",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "大",
+        "pinyin": "dà",
+        "hanviet": "Đại",
+        "meaning": "Lớn",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "小",
+        "pinyin": "xiǎo",
+        "hanviet": "Tiểu",
+        "meaning": "Nhỏ",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      }
+    ]
+  },
+  {
+    "theme": "8. Từ vựng quốc gia, ngôn ngữ & nghề nghiệp",
+    "words": [
+      {
+        "hanzi": "老师",
+        "pinyin": "lǎoshī",
+        "hanviet": "Lão sư",
+        "meaning": "Giáo viên",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "学生",
+        "pinyin": "xuéshēng",
+        "hanviet": "Học sinh",
+        "meaning": "Học sinh",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "同学",
+        "pinyin": "tóngxué",
+        "hanviet": "Đồng học",
+        "meaning": "Bạn cùng lớp",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "职员/办事员",
+        "pinyin": "zhíyuán / bànshìyuán",
+        "hanviet": "Chức viên / Biện sự viên",
+        "meaning": "Nhân viên",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "中国",
+        "pinyin": "Zhōngguó",
+        "hanviet": "Trung Quốc",
+        "meaning": "Trung Quốc",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "越南",
+        "pinyin": "Yuènán",
+        "hanviet": "Việt Nam",
+        "meaning": "Việt Nam",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "美国",
+        "pinyin": "Měiguó",
+        "hanviet": "Mỹ Quốc",
+        "meaning": "Nước Mỹ",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "日本",
+        "pinyin": "Rìběn",
+        "hanviet": "Nhật Bản",
+        "meaning": "Nhật Bản",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "法国",
+        "pinyin": "Fǎguó",
+        "hanviet": "Pháp Quốc",
+        "meaning": "Nước Pháp",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "德国",
+        "pinyin": "Déguó",
+        "hanviet": "Đức Quốc",
+        "meaning": "Nước Đức",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "韩国",
+        "pinyin": "Hánguó",
+        "hanviet": "Hàn Quốc",
+        "meaning": "Hàn Quốc",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "俄国",
+        "pinyin": "Éguó",
+        "hanviet": "Nga Quốc",
+        "meaning": "Nước Nga",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "汉语/中文",
+        "pinyin": "Hànyǔ / Zhōngwén",
+        "hanviet": "Hán ngữ / Trung văn",
+        "meaning": "Tiếng Hán/Tiếng Trung",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "越南语/粤语",
+        "pinyin": "Yuènányǔ / Yuèyǔ",
+        "hanviet": "Việt Nam ngữ / Việt ngữ",
+        "meaning": "Tiếng Việt",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "日语/日文",
+        "pinyin": "Rìyǔ / Rìwén",
+        "hanviet": "Nhật ngữ / Nhật văn",
+        "meaning": "Tiếng Nhật",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "法语/法文",
+        "pinyin": "Fǎyǔ / Fǎwén",
+        "hanviet": "Pháp ngữ / Pháp văn",
+        "meaning": "Tiếng Pháp",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "语言",
+        "pinyin": "yǔyán",
+        "hanviet": "Ngữ ngôn",
+        "meaning": "Ngôn ngữ",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "班",
+        "pinyin": "bān",
+        "hanviet": "Ban",
+        "meaning": "Lớp",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "外国",
+        "pinyin": "wàiguó",
+        "hanviet": "Ngoại quốc",
+        "meaning": "Nước ngoài",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      }
+    ]
+  },
+  {
+    "theme": "9. Các câu giao tiếp cơ bản & Thành ngữ",
+    "words": [
+      {
+        "hanzi": "Câu/Từ",
+        "pinyin": "Pinyin",
+        "hanviet": "Nghĩa tiếng Việt",
+        "meaning": "Ghi chú",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "你好！",
+        "pinyin": "Nǐ hǎo!",
+        "hanviet": "Xin chào!",
+        "meaning": "",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "谢谢！",
+        "pinyin": "Xièxie!",
+        "hanviet": "Cảm ơn!",
+        "meaning": "",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "再见！",
+        "pinyin": "Zàijiàn!",
+        "hanviet": "Tạm biệt!",
+        "meaning": "",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "明天见！",
+        "pinyin": "Míngtiān jiàn!",
+        "hanviet": "Ngày mai gặp!",
+        "meaning": "",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "请进！",
+        "pinyin": "Qǐng jìn!",
+        "hanviet": "Mời vào!",
+        "meaning": "",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "早上好！",
+        "pinyin": "Zǎoshang hǎo!",
+        "hanviet": "Chào buổi sáng!",
+        "meaning": "",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "对不起。",
+        "pinyin": "Duìbuqǐ.",
+        "hanviet": "Xin lỗi.",
+        "meaning": "",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "没关系。",
+        "pinyin": "Méi guānxi.",
+        "hanviet": "Không sao.",
+        "meaning": "",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "你叫什么名字？",
+        "pinyin": "Nǐ jiào shénme míngzi?",
+        "hanviet": "Bạn tên gì?",
+        "meaning": "",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "我叫...",
+        "pinyin": "Wǒ jiào...",
+        "hanviet": "Tôi tên là...",
+        "meaning": "",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "你忙吗？",
+        "pinyin": "Nǐ máng ma?",
+        "hanviet": "Bạn bận không?",
+        "meaning": "",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "我觉得...",
+        "pinyin": "Wǒ juéde...",
+        "hanviet": "Tôi cảm thấy...",
+        "meaning": "",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "你觉得怎么样？",
+        "pinyin": "Nǐ juéde zěnmeyàng?",
+        "hanviet": "Bạn cảm thấy thế nào?",
+        "meaning": "",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "他是谁？",
+        "pinyin": "Tā shì shuí?",
+        "hanviet": "Anh ấy là ai?",
+        "meaning": "",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "这是什么语言？",
+        "pinyin": "Zhè shì shénme yǔyán?",
+        "hanviet": "Đây là ngôn ngữ gì?",
+        "meaning": "",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "你会说汉语吗？",
+        "pinyin": "Nǐ huì shuō Hànyǔ ma?",
+        "hanviet": "Bạn biết nói tiếng Trung không?",
+        "meaning": "",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "我喜欢...",
+        "pinyin": "Wǒ xǐhuan...",
+        "hanviet": "Tôi thích...",
+        "meaning": "",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "我不喜欢...",
+        "pinyin": "Wǒ bù xǐhuan...",
+        "hanviet": "Tôi không thích...",
+        "meaning": "",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "你要什么？",
+        "pinyin": "Nǐ yào shénme?",
+        "hanviet": "Bạn muốn gì?",
+        "meaning": "",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "多少钱？",
+        "pinyin": "Duōshǎo qián?",
+        "hanviet": "Bao nhiêu tiền?",
+        "meaning": "",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "太贵了！",
+        "pinyin": "Tài guì le!",
+        "hanviet": "Đắt quá!",
+        "meaning": "",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "便宜一点吧。",
+        "pinyin": "Piányi yīdiǎn ba.",
+        "hanviet": "Rẻ chút đi.",
+        "meaning": "",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "一共多少钱？",
+        "pinyin": "Yígòng duōshǎo qián?",
+        "hanviet": "Tổng cộng bao nhiêu tiền?",
+        "meaning": "",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "你要别的吗？",
+        "pinyin": "Nǐ hái yào biéde ma?",
+        "hanviet": "Bạn còn muốn cái khác không?",
+        "meaning": "",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "很好吃。",
+        "pinyin": "Hěn hǎochī.",
+        "hanviet": "Rất ngon.",
+        "meaning": "",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "很好喝。",
+        "pinyin": "Hěn hǎohē.",
+        "hanviet": "Uống rất ngon.",
+        "meaning": "",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "你还要吗？",
+        "pinyin": "Nǐ hái yào ma?",
+        "hanviet": "Bạn còn muốn nữa không?",
+        "meaning": "",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "我也是。",
+        "pinyin": "Wǒ yě shì.",
+        "hanviet": "Tôi cũng vậy.",
+        "meaning": "",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "还没。",
+        "pinyin": "Hái méi.",
+        "hanviet": "Vẫn chưa.",
+        "meaning": "",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "是吗？",
+        "pinyin": "Shì ma?",
+        "hanviet": "Vậy à?",
+        "meaning": "",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "那...",
+        "pinyin": "Nà...",
+        "hanviet": "Vậy thì...",
+        "meaning": "",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "可以吗？",
+        "pinyin": "Kěyǐ ma?",
+        "hanviet": "Được không?",
+        "meaning": "",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "好吗？",
+        "pinyin": "Hǎo ma?",
+        "hanviet": "Được không?",
+        "meaning": "",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "为什么？",
+        "pinyin": "Wèishénme?",
+        "hanviet": "Tại sao?",
+        "meaning": "",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "因为...",
+        "pinyin": "Yīnwèi...",
+        "hanviet": "Bởi vì...",
+        "meaning": "",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "如果..., 就...",
+        "pinyin": "Rúguǒ..., jiù...",
+        "hanviet": "Nếu..., thì...",
+        "meaning": "Cấu trúc \"nếu...thì\"",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "...怎么样？",
+        "pinyin": "...zěnmeyàng?",
+        "hanviet": "...thì sao?",
+        "meaning": "",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "你呢？",
+        "pinyin": "Nǐ ne?",
+        "hanviet": "Còn bạn?",
+        "meaning": "",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "听你们的。",
+        "pinyin": "Tīng nǐmen de.",
+        "hanviet": "Tùy mọi người / Nghe theo các bạn.",
+        "meaning": "",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "听说...",
+        "pinyin": "Tīngshuō...",
+        "hanviet": "Nghe nói là...",
+        "meaning": "",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "我以为...",
+        "pinyin": "Yǐwéi...",
+        "hanviet": "Tôi tưởng là...",
+        "meaning": "",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "所以...",
+        "pinyin": "Suǒyǐ...",
+        "hanviet": "Cho nên...",
+        "meaning": "",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "无话可说",
+        "pinyin": "Wú huà kě shuō",
+        "hanviet": "Cạn lời",
+        "meaning": "Thành ngữ",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      },
+      {
+        "hanzi": "天气",
+        "pinyin": "tiānqì",
+        "hanviet": "Thời tiết",
+        "meaning": "",
+        "example": "",
+        "note": "",
+        "confusing": "",
+        "grammar": ""
+      }
+    ]
+  },
+  {
+    "theme": "Tổng hợp Ngữ pháp và Mẫu câu",
+    "words": [
+      {
+        "hanzi": "---",
+        "pinyin": "",
+        "hanviet": "",
+        "meaning": "Danh sách từ vựng và thông tin tổng hợp",
+        "example": "",
+        "note": "Ngữ pháp / Mẫu câu",
+        "confusing": "",
+        "grammar": "Danh sách từ vựng và thông tin tổng hợp"
+      },
+      {
+        "hanzi": "什么",
+        "pinyin": "",
+        "hanviet": "",
+        "meaning": "• Động từ + 什么 (shénme): Làm cái gì? (Ví dụ: 喝什么 - Uống gì?).",
+        "example": "",
+        "note": "Ngữ pháp / Mẫu câu",
+        "confusing": "",
+        "grammar": "• Động từ + 什么 (shénme): Làm cái gì? (Ví dụ: 喝什么 - Uống gì?)."
+      },
+      {
+        "hanzi": "什么",
+        "pinyin": "",
+        "hanviet": "",
+        "meaning": "• 什么 (shénme) + Danh từ: Cái gì? (Ví dụ: 什么名字 - Tên gì?).",
+        "example": "",
+        "note": "Ngữ pháp / Mẫu câu",
+        "confusing": "",
+        "grammar": "• 什么 (shénme) + Danh từ: Cái gì? (Ví dụ: 什么名字 - Tên gì?)."
+      },
+      {
+        "hanzi": "以以为",
+        "pinyin": "",
+        "hanviet": "",
+        "meaning": "• 以以为 (yǐwéi): Tưởng là (thường là nhầm lẫn).",
+        "example": "",
+        "note": "Ngữ pháp / Mẫu câu",
+        "confusing": "",
+        "grammar": "• 以以为 (yǐwéi): Tưởng là (thường là nhầm lẫn)."
+      },
+      {
+        "hanzi": "无话可说",
+        "pinyin": "",
+        "hanviet": "",
+        "meaning": "• 无话可说 (wú huà kě shuō): Cạn lời, không còn gì để nói.",
+        "example": "",
+        "note": "Ngữ pháp / Mẫu câu",
+        "confusing": "",
+        "grammar": "• 无话可说 (wú huà kě shuō): Cạn lời, không còn gì để nói."
+      },
+      {
+        "hanzi": "在",
+        "pinyin": "",
+        "hanviet": "",
+        "meaning": "• Chủ ngữ + 在 (zài) + Nơi chốn + Hành động: Làm gì ở đâu. (Ví dụ: 你在哪里工作? - Bạn làm việc ở đâu?).",
+        "example": "",
+        "note": "Ngữ pháp / Mẫu câu",
+        "confusing": "",
+        "grammar": "• Chủ ngữ + 在 (zài) + Nơi chốn + Hành động: Làm gì ở đâu. (Ví dụ: 你在哪里工作? - Bạn làm việc ở đâu?)."
+      },
+      {
+        "hanzi": "如果",
+        "pinyin": "",
+        "hanviet": "",
+        "meaning": "• Nếu... thì...: 如果 (rúguǒ)..., 就 (jiù)....",
+        "example": "",
+        "note": "Ngữ pháp / Mẫu câu",
+        "confusing": "",
+        "grammar": "• Nếu... thì...: 如果 (rúguǒ)..., 就 (jiù)...."
+      },
+      {
+        "hanzi": "请问这里",
+        "pinyin": "",
+        "hanviet": "",
+        "meaning": "• Hỏi thực đơn: 请问这里有什么好吃菜? (Qǐngwèn zhèlǐ yǒu shénme hǎochī de cài?) - Xin hỏi ở đây có món gì ngon?",
+        "example": "",
+        "note": "Ngữ pháp / Mẫu câu",
+        "confusing": "",
+        "grammar": "• Hỏi thực đơn: 请问这里有什么好吃菜? (Qǐngwèn zhèlǐ yǒu shénme hǎochī de cài?) - Xin hỏi ở đây có món gì ngon?"
+      },
+      {
+        "hanzi": "我会写汉",
+        "pinyin": "",
+        "hanviet": "",
+        "meaning": "• Hỏi về khả năng: 我会写汉字。 (Wǒ huì xiě hànzì.) - Tôi biết viết chữ Hán.",
+        "example": "",
+        "note": "Ngữ pháp / Mẫu câu",
+        "confusing": "",
+        "grammar": "• Hỏi về khả năng: 我会写汉字。 (Wǒ huì xiě hànzì.) - Tôi biết viết chữ Hán."
+      },
+      {
+        "hanzi": "这个汉语",
+        "pinyin": "",
+        "hanviet": "",
+        "meaning": "• Sự không hiểu biết: 这个汉语我不知道。 (Zhège Hànyǔ wǒ bù zhīdào.) - Tiếng Hán này tôi không biết.",
+        "example": "",
+        "note": "Ngữ pháp / Mẫu câu",
+        "confusing": "",
+        "grammar": "• Sự không hiểu biết: 这个汉语我不知道。 (Zhège Hànyǔ wǒ bù zhīdào.) - Tiếng Hán này tôi không biết."
+      },
+      {
+        "hanzi": "一下",
+        "pinyin": "",
+        "hanviet": "",
+        "meaning": "• Cấu trúc thử nghiệm: Động từ + 一下 (yīxià). Ví dụ: 等一下 (Děng yīxià) - Đợi một chút.",
+        "example": "",
+        "note": "Ngữ pháp / Mẫu câu",
+        "confusing": "",
+        "grammar": "• Cấu trúc thử nghiệm: Động từ + 一下 (yīxià). Ví dụ: 等一下 (Děng yīxià) - Đợi một chút."
+      },
+      {
+        "hanzi": "来一碗米",
+        "pinyin": "",
+        "hanviet": "",
+        "meaning": "• Đề nghị: 来一碗米饭吧! (Lái yī wǎn mǐfàn ba!) - Cho một bát cơm nhé!",
+        "example": "",
+        "note": "Ngữ pháp / Mẫu câu",
+        "confusing": "",
+        "grammar": "• Đề nghị: 来一碗米饭吧! (Lái yī wǎn mǐfàn ba!) - Cho một bát cơm nhé!"
+      },
+      {
+        "hanzi": "酒",
+        "pinyin": "",
+        "hanviet": "",
+        "meaning": "• Từ jiu (rượu) là jiǔ, cần phân biệt với jiǔ (số 9) dù phát âm giống nhau nhưng Hán tự khác nhau (酒 và 九).",
+        "example": "",
+        "note": "Ngữ pháp / Mẫu câu",
+        "confusing": "",
+        "grammar": "• Từ jiu (rượu) là jiǔ, cần phân biệt với jiǔ (số 9) dù phát âm giống nhau nhưng Hán tự khác nhau (酒 và 九)."
+      },
+      {
+        "hanzi": "等一下",
+        "pinyin": "",
+        "hanviet": "",
+        "meaning": "• Cấu trúc đợi chờ: 等一下 (Děng yīxià): Đợi một chút.",
+        "example": "",
+        "note": "Ngữ pháp / Mẫu câu",
+        "confusing": "",
+        "grammar": "• Cấu trúc đợi chờ: 等一下 (Děng yīxià): Đợi một chút."
+      },
+      {
+        "hanzi": "怎么",
+        "pinyin": "",
+        "hanviet": "",
+        "meaning": "• Cấu trúc với 怎么: 怎么 + Động từ (Ví dụ: 怎么买 - Bán thế nào?; 怎么去 - Đi thế nào?).",
+        "example": "",
+        "note": "Ngữ pháp / Mẫu câu",
+        "confusing": "",
+        "grammar": "• Cấu trúc với 怎么: 怎么 + Động từ (Ví dụ: 怎么买 - Bán thế nào?; 怎么去 - Đi thế nào?)."
+      },
+      {
+        "hanzi": "有点儿",
+        "pinyin": "",
+        "hanviet": "",
+        "meaning": "• Phó từ chỉ mức độ: 有点儿 (yǒudiǎnr) + Tính từ: Có chút... (không hài lòng). Ví dụ: 有点儿贵 (Có chút đắt).",
+        "example": "",
+        "note": "Ngữ pháp / Mẫu câu",
+        "confusing": "",
+        "grammar": "• Phó từ chỉ mức độ: 有点儿 (yǒudiǎnr) + Tính từ: Có chút... (không hài lòng). Ví dụ: 有点儿贵 (Có chút đắt)."
+      },
+      {
+        "hanzi": "一点儿",
+        "pinyin": "",
+        "hanviet": "",
+        "meaning": "• Số lượng ít: 一点儿 (yīdiǎnr) + Danh từ: Một ít/một xíu.",
+        "example": "",
+        "note": "Ngữ pháp / Mẫu câu",
+        "confusing": "",
+        "grammar": "• Số lượng ít: 一点儿 (yīdiǎnr) + Danh từ: Một ít/một xíu."
+      },
+      {
+        "hanzi": "我也是",
+        "pinyin": "",
+        "hanviet": "",
+        "meaning": "• Sự đồng tình: 我也是 (Wǒ yě shì): Tôi cũng vậy.",
+        "example": "",
+        "note": "Ngữ pháp / Mẫu câu",
+        "confusing": "",
+        "grammar": "• Sự đồng tình: 我也是 (Wǒ yě shì): Tôi cũng vậy."
+      },
+      {
+        "hanzi": "在",
+        "pinyin": "",
+        "hanviet": "",
+        "meaning": "• Sự tồn tại/Đang làm: 在 (zài) + Địa điểm / 在 (zài) + Động từ (Đang làm gì ở đâu).",
+        "example": "",
+        "note": "Ngữ pháp / Mẫu câu",
+        "confusing": "",
+        "grammar": "• Sự tồn tại/Đang làm: 在 (zài) + Địa điểm / 在 (zài) + Động từ (Đang làm gì ở đâu)."
+      },
+      {
+        "hanzi": "能",
+        "pinyin": "",
+        "hanviet": "",
+        "meaning": "• Khả năng: 能 (néng) / 可以 (kěyǐ): Có thể làm gì đó.",
+        "example": "",
+        "note": "Ngữ pháp / Mẫu câu",
+        "confusing": "",
+        "grammar": "• Khả năng: 能 (néng) / 可以 (kěyǐ): Có thể làm gì đó."
+      },
+      {
+        "hanzi": "---",
+        "pinyin": "",
+        "hanviet": "",
+        "meaning": "A. Cấu trúc câu hỏi cơ bản",
+        "example": "",
+        "note": "Ngữ pháp / Mẫu câu",
+        "confusing": "",
+        "grammar": "A. Cấu trúc câu hỏi cơ bản"
+      },
+      {
+        "hanzi": "吗",
+        "pinyin": "",
+        "hanviet": "",
+        "meaning": "• Câu hỏi với 吗 (ma): Đặt ở cuối câu để tạo câu hỏi Có/Không. Ví dụ: 你爸爸来了吗? (Ba của bạn đến chưa?)",
+        "example": "",
+        "note": "Ngữ pháp / Mẫu câu",
+        "confusing": "",
+        "grammar": "• Câu hỏi với 吗 (ma): Đặt ở cuối câu để tạo câu hỏi Có/Không. Ví dụ: 你爸爸来了吗? (Ba của bạn đến chưa?)"
+      },
+      {
+        "hanzi": "呢",
+        "pinyin": "",
+        "hanviet": "",
+        "meaning": "• Câu hỏi với 呢 (ne): Dùng để hỏi ngược lại đối phương (\"Còn... thì sao?\"). Ví dụ: 你呢? (Còn bạn?)",
+        "example": "",
+        "note": "Ngữ pháp / Mẫu câu",
+        "confusing": "",
+        "grammar": "• Câu hỏi với 呢 (ne): Dùng để hỏi ngược lại đối phương (\"Còn... thì sao?\"). Ví dụ: 你呢? (Còn bạn?)"
+      },
+      {
+        "hanzi": "还是",
+        "pinyin": "",
+        "hanviet": "",
+        "meaning": "• Câu hỏi lựa chọn 还是 (háishi): Dùng trong câu hỏi \"A hay là B\". Ví dụ: 你喜欢茶还是奶茶? (Bạn thích trà hay trà sữa?)",
+        "example": "",
+        "note": "Ngữ pháp / Mẫu câu",
+        "confusing": "",
+        "grammar": "• Câu hỏi lựa chọn 还是 (háishi): Dùng trong câu hỏi \"A hay là B\". Ví dụ: 你喜欢茶还是奶茶? (Bạn thích trà hay trà sữa?)"
+      },
+      {
+        "hanzi": "谁",
+        "pinyin": "",
+        "hanviet": "",
+        "meaning": "• Câu hỏi với đại từ nghi vấn: 谁 (ai), 什么 (cái gì), 几 (mấy), 多少 (bao nhiêu). Ví dụ: 你是谁?, 你要买什么?, 一共多少钱?",
+        "example": "",
+        "note": "Ngữ pháp / Mẫu câu",
+        "confusing": "",
+        "grammar": "• Câu hỏi với đại từ nghi vấn: 谁 (ai), 什么 (cái gì), 几 (mấy), 多少 (bao nhiêu). Ví dụ: 你是谁?, 你要买什么?, 一共多少钱?"
+      },
+      {
+        "hanzi": "---",
+        "pinyin": "",
+        "hanviet": "",
+        "meaning": "B. Cấu trúc vị trí và hành động (Trong IMG_3580)",
+        "example": "",
+        "note": "Ngữ pháp / Mẫu câu",
+        "confusing": "",
+        "grammar": "B. Cấu trúc vị trí và hành động (Trong IMG_3580)"
+      },
+      {
+        "hanzi": "在",
+        "pinyin": "",
+        "hanviet": "",
+        "meaning": "• Công thức: Chủ ngữ + 在 (zài) + nơi chốn + hành động.",
+        "example": "",
+        "note": "Ngữ pháp / Mẫu câu",
+        "confusing": "",
+        "grammar": "• Công thức: Chủ ngữ + 在 (zài) + nơi chốn + hành động."
+      },
+      {
+        "hanzi": "我在学校",
+        "pinyin": "",
+        "hanviet": "",
+        "meaning": "◦ Ví dụ: 我在学校学汉语 (Tôi học tiếng Hán ở trường).",
+        "example": "",
+        "note": "Ngữ pháp / Mẫu câu",
+        "confusing": "",
+        "grammar": "◦ Ví dụ: 我在学校学汉语 (Tôi học tiếng Hán ở trường)."
+      },
+      {
+        "hanzi": "她在咖啡",
+        "pinyin": "",
+        "hanviet": "",
+        "meaning": "◦ Ví dụ: 她在咖啡店等你 (Cô ấy ở tiệm cà phê đợi bạn).",
+        "example": "",
+        "note": "Ngữ pháp / Mẫu câu",
+        "confusing": "",
+        "grammar": "◦ Ví dụ: 她在咖啡店等你 (Cô ấy ở tiệm cà phê đợi bạn)."
+      },
+      {
+        "hanzi": "---",
+        "pinyin": "",
+        "hanviet": "",
+        "meaning": "C. Cấu trúc về thời gian (Trong IMG_3583)",
+        "example": "",
+        "note": "Ngữ pháp / Mẫu câu",
+        "confusing": "",
+        "grammar": "C. Cấu trúc về thời gian (Trong IMG_3583)"
+      },
+      {
+        "hanzi": "---",
+        "pinyin": "",
+        "hanviet": "",
+        "meaning": "• Thứ tự sắp xếp: Tuần + Ngày + Buổi + Giờ (diǎn).",
+        "example": "",
+        "note": "Ngữ pháp / Mẫu câu",
+        "confusing": "",
+        "grammar": "• Thứ tự sắp xếp: Tuần + Ngày + Buổi + Giờ (diǎn)."
+      },
+      {
+        "hanzi": "星期三上",
+        "pinyin": "",
+        "hanviet": "",
+        "meaning": "◦ Ví dụ: 星期三上午十点 (10 giờ sáng thứ Tư).",
+        "example": "",
+        "note": "Ngữ pháp / Mẫu câu",
+        "confusing": "",
+        "grammar": "◦ Ví dụ: 星期三上午十点 (10 giờ sáng thứ Tư)."
+      },
+      {
+        "hanzi": "---",
+        "pinyin": "",
+        "hanviet": "",
+        "meaning": "D. Cách dùng Động từ bổ trợ và Trạng thái",
+        "example": "",
+        "note": "Ngữ pháp / Mẫu câu",
+        "confusing": "",
+        "grammar": "D. Cách dùng Động từ bổ trợ và Trạng thái"
+      },
+      {
+        "hanzi": "要",
+        "pinyin": "",
+        "hanviet": "",
+        "meaning": "• 要 (yào) vs 想 (xiǎng):",
+        "example": "",
+        "note": "Ngữ pháp / Mẫu câu",
+        "confusing": "",
+        "grammar": "• 要 (yào) vs 想 (xiǎng):"
+      },
+      {
+        "hanzi": "要",
+        "pinyin": "",
+        "hanviet": "",
+        "meaning": "◦ 要 + Động từ/Danh từ: Muốn, cần, phải làm gì đó (mang tính quyết định hơn).",
+        "example": "",
+        "note": "Ngữ pháp / Mẫu câu",
+        "confusing": "",
+        "grammar": "◦ 要 + Động từ/Danh từ: Muốn, cần, phải làm gì đó (mang tính quyết định hơn)."
+      },
+      {
+        "hanzi": "想",
+        "pinyin": "",
+        "hanviet": "",
+        "meaning": "◦ 想 + Động từ: Muốn, định làm gì (mang tính mong muốn); 想 + Danh từ: Nhớ (miss).",
+        "example": "",
+        "note": "Ngữ pháp / Mẫu câu",
+        "confusing": "",
+        "grammar": "◦ 想 + Động từ: Muốn, định làm gì (mang tính mong muốn); 想 + Danh từ: Nhớ (miss)."
+      },
+      {
+        "hanzi": "会",
+        "pinyin": "",
+        "hanviet": "",
+        "meaning": "• 会 (huì) vs 知道 (zhīdào):",
+        "example": "",
+        "note": "Ngữ pháp / Mẫu câu",
+        "confusing": "",
+        "grammar": "• 会 (huì) vs 知道 (zhīdào):"
+      },
+      {
+        "hanzi": "会",
+        "pinyin": "",
+        "hanviet": "",
+        "meaning": "◦ 会: Biết thông qua rèn luyện (biết nói tiếng Hán, biết lái xe).",
+        "example": "",
+        "note": "Ngữ pháp / Mẫu câu",
+        "confusing": "",
+        "grammar": "◦ 会: Biết thông qua rèn luyện (biết nói tiếng Hán, biết lái xe)."
+      },
+      {
+        "hanzi": "知道",
+        "pinyin": "",
+        "hanviet": "",
+        "meaning": "◦ 知道: Biết về một thông tin, sự thật.",
+        "example": "",
+        "note": "Ngữ pháp / Mẫu câu",
+        "confusing": "",
+        "grammar": "◦ 知道: Biết về một thông tin, sự thật."
+      },
+      {
+        "hanzi": "一下",
+        "pinyin": "",
+        "hanviet": "",
+        "meaning": "• Động từ + 一下 (yīxià): Làm gì đó một chút, một lát. Ví dụ: 等一下 (Đợi một chút).",
+        "example": "",
+        "note": "Ngữ pháp / Mẫu câu",
+        "confusing": "",
+        "grammar": "• Động từ + 一下 (yīxià): Làm gì đó một chút, một lát. Ví dụ: 等一下 (Đợi một chút)."
+      },
+      {
+        "hanzi": "---",
+        "pinyin": "",
+        "hanviet": "",
+        "meaning": "E. Cấu trúc mua sắm và mặc cả (Trong IMG_3591)",
+        "example": "",
+        "note": "Ngữ pháp / Mẫu câu",
+        "confusing": "",
+        "grammar": "E. Cấu trúc mua sắm và mặc cả (Trong IMG_3591)"
+      },
+      {
+        "hanzi": "便宜一点",
+        "pinyin": "",
+        "hanviet": "",
+        "meaning": "• Mặc cả: 便宜一点吧 (Piányi yīdiǎn ba - Rẻ chút đi).",
+        "example": "",
+        "note": "Ngữ pháp / Mẫu câu",
+        "confusing": "",
+        "grammar": "• Mặc cả: 便宜一点吧 (Piányi yīdiǎn ba - Rẻ chút đi)."
+      },
+      {
+        "hanzi": "如果",
+        "pinyin": "",
+        "hanviet": "",
+        "meaning": "• Câu điều kiện: 如果 (rúguǒ)... 就 (jiù)... (Nếu... thì...).",
+        "example": "",
+        "note": "Ngữ pháp / Mẫu câu",
+        "confusing": "",
+        "grammar": "• Câu điều kiện: 如果 (rúguǒ)... 就 (jiù)... (Nếu... thì...)."
+      },
+      {
+        "hanzi": "如果可以",
+        "pinyin": "",
+        "hanviet": "",
+        "meaning": "◦ Ví dụ: 如果可以便宜一点，我买三斤 (Nếu có thể rẻ chút, tôi mua 3 cân).",
+        "example": "",
+        "note": "Ngữ pháp / Mẫu câu",
+        "confusing": "",
+        "grammar": "◦ Ví dụ: 如果可以便宜一点，我买三斤 (Nếu có thể rẻ chút, tôi mua 3 cân)."
+      },
+      {
+        "hanzi": "---",
+        "pinyin": "",
+        "hanviet": "",
+        "meaning": "F. Lượng từ (Measure words)",
+        "example": "",
+        "note": "Ngữ pháp / Mẫu câu",
+        "confusing": "",
+        "grammar": "F. Lượng từ (Measure words)"
+      },
+      {
+        "hanzi": "个",
+        "pinyin": "",
+        "hanviet": "",
+        "meaning": "• 个 (gè): Lượng từ chung cho người, quả, cái.",
+        "example": "",
+        "note": "Ngữ pháp / Mẫu câu",
+        "confusing": "",
+        "grammar": "• 个 (gè): Lượng từ chung cho người, quả, cái."
+      },
+      {
+        "hanzi": "斤",
+        "pinyin": "",
+        "hanviet": "",
+        "meaning": "• 斤 (jīn): Đơn vị đo lường (1 cân Trung Quốc = 0.5kg).",
+        "example": "",
+        "note": "Ngữ pháp / Mẫu câu",
+        "confusing": "",
+        "grammar": "• 斤 (jīn): Đơn vị đo lường (1 cân Trung Quốc = 0.5kg)."
+      },
+      {
+        "hanzi": "碗",
+        "pinyin": "",
+        "hanviet": "",
+        "meaning": "• 碗 (wǎn): Bát, chén.",
+        "example": "",
+        "note": "Ngữ pháp / Mẫu câu",
+        "confusing": "",
+        "grammar": "• 碗 (wǎn): Bát, chén."
+      },
+      {
+        "hanzi": "只",
+        "pinyin": "",
+        "hanviet": "",
+        "meaning": "• 只 (zhī): Lượng từ cho con vật (con mèo).",
+        "example": "",
+        "note": "Ngữ pháp / Mẫu câu",
+        "confusing": "",
+        "grammar": "• 只 (zhī): Lượng từ cho con vật (con mèo)."
+      },
+      {
+        "hanzi": "还",
+        "pinyin": "",
+        "hanviet": "",
+        "meaning": "• 还 (hái): Vẫn, còn (Ví dụ: 你还要别的吗? - Bạn còn cần cái khác không?).",
+        "example": "",
+        "note": "Ngữ pháp / Mẫu câu",
+        "confusing": "",
+        "grammar": "• 还 (hái): Vẫn, còn (Ví dụ: 你还要别的吗? - Bạn còn cần cái khác không?)."
+      },
+      {
+        "hanzi": "也",
+        "pinyin": "",
+        "hanviet": "",
+        "meaning": "• 也 (yě): Cũng (Ví dụ: 我也是 - Tôi cũng vậy).",
+        "example": "",
+        "note": "Ngữ pháp / Mẫu câu",
+        "confusing": "",
+        "grammar": "• 也 (yě): Cũng (Ví dụ: 我也是 - Tôi cũng vậy)."
+      },
+      {
+        "hanzi": "都",
+        "pinyin": "",
+        "hanviet": "",
+        "meaning": "• 都 (dōu): Đều (Ví dụ: 他们都来了 - Họ đều đến rồi).",
+        "example": "",
+        "note": "Ngữ pháp / Mẫu câu",
+        "confusing": "",
+        "grammar": "• 都 (dōu): Đều (Ví dụ: 他们都来了 - Họ đều đến rồi)."
+      },
+      {
+        "hanzi": "还没",
+        "pinyin": "",
+        "hanviet": "",
+        "meaning": "• 还没 (háiméi): Vẫn chưa.",
+        "example": "",
+        "note": "Ngữ pháp / Mẫu câu",
+        "confusing": "",
+        "grammar": "• 还没 (háiméi): Vẫn chưa."
+      },
+      {
+        "hanzi": "太",
+        "pinyin": "",
+        "hanviet": "",
+        "meaning": "• 太...了 (tài...le): Quá... rồi (Ví dụ: 太贵了 - Đắt quá rồi).",
+        "example": "",
+        "note": "Ngữ pháp / Mẫu câu",
+        "confusing": "",
+        "grammar": "• 太...了 (tài...le): Quá... rồi (Ví dụ: 太贵了 - Đắt quá rồi)."
+      },
+      {
+        "hanzi": "一",
+        "pinyin": "",
+        "hanviet": "",
+        "meaning": "• Số đếm: 一 (yī-1), 二 (èr-2), 三 (sān-3), 四 (sì-4), 五 (wǔ-5), 六 (liù-6), 七 (qī-7), 八 (bā-8), 九 (jiǔ-9), 十 (shí-10).",
+        "example": "",
+        "note": "Ngữ pháp / Mẫu câu",
+        "confusing": "",
+        "grammar": "• Số đếm: 一 (yī-1), 二 (èr-2), 三 (sān-3), 四 (sì-4), 五 (wǔ-5), 六 (liù-6), 七 (qī-7), 八 (bā-8), 九 (jiǔ-9), 十 (shí-10)."
+      },
+      {
+        "hanzi": "个",
+        "pinyin": "",
+        "hanviet": "",
+        "meaning": "◦ 个 (gè): Cái, chiếc (người, vật chung).",
+        "example": "",
+        "note": "Ngữ pháp / Mẫu câu",
+        "confusing": "",
+        "grammar": "◦ 个 (gè): Cái, chiếc (người, vật chung)."
+      },
+      {
+        "hanzi": "口",
+        "pinyin": "",
+        "hanviet": "",
+        "meaning": "◦ 口 (kǒu): Nhân khẩu (gia đình), ngụm (nước).",
+        "example": "",
+        "note": "Ngữ pháp / Mẫu câu",
+        "confusing": "",
+        "grammar": "◦ 口 (kǒu): Nhân khẩu (gia đình), ngụm (nước)."
+      },
+      {
+        "hanzi": "杯",
+        "pinyin": "",
+        "hanviet": "",
+        "meaning": "◦ 杯 (bēi) / 碗 (wǎn): Ly, cốc / Bát, chén.",
+        "example": "",
+        "note": "Ngữ pháp / Mẫu câu",
+        "confusing": "",
+        "grammar": "◦ 杯 (bēi) / 碗 (wǎn): Ly, cốc / Bát, chén."
+      },
+      {
+        "hanzi": "本",
+        "pinyin": "",
+        "hanviet": "",
+        "meaning": "◦ 本 (běn) / 件 (jiàn) / 只 (zhī): Quyển (sách) / Bộ, chiếc (áo) / Con (mèo).",
+        "example": "",
+        "note": "Ngữ pháp / Mẫu câu",
+        "confusing": "",
+        "grammar": "◦ 本 (běn) / 件 (jiàn) / 只 (zhī): Quyển (sách) / Bộ, chiếc (áo) / Con (mèo)."
+      },
+      {
+        "hanzi": "斤",
+        "pinyin": "",
+        "hanviet": "",
+        "meaning": "◦ 斤 (jīn) / 公斤 (gōngjīn): Cân (0.5kg) / Ki-lô-gam (1kg).",
+        "example": "",
+        "note": "Ngữ pháp / Mẫu câu",
+        "confusing": "",
+        "grammar": "◦ 斤 (jīn) / 公斤 (gōngjīn): Cân (0.5kg) / Ki-lô-gam (1kg)."
+      },
+      {
+        "hanzi": "次",
+        "pinyin": "",
+        "hanviet": "",
+        "meaning": "◦ 次 (cì) / 第 (dì): Lần / Thứ (lần thứ...).",
+        "example": "",
+        "note": "Ngữ pháp / Mẫu câu",
+        "confusing": "",
+        "grammar": "◦ 次 (cì) / 第 (dì): Lần / Thứ (lần thứ...)."
+      },
+      {
+        "hanzi": "星期一",
+        "pinyin": "",
+        "hanviet": "",
+        "meaning": "• Thứ trong tuần: 星期一 (Thứ 2) đến 星期六 (Thứ 7), 星期天/日 (Chủ nhật).",
+        "example": "",
+        "note": "Ngữ pháp / Mẫu câu",
+        "confusing": "",
+        "grammar": "• Thứ trong tuần: 星期一 (Thứ 2) đến 星期六 (Thứ 7), 星期天/日 (Chủ nhật)."
+      },
+      {
+        "hanzi": "早上",
+        "pinyin": "",
+        "hanviet": "",
+        "meaning": "• Buổi trong ngày: 早上 (Sáng sớm), 上午 (Sáng), 中午 (Trưa), 下午 (Chiều), 晚上 (Tối).",
+        "example": "",
+        "note": "Ngữ pháp / Mẫu câu",
+        "confusing": "",
+        "grammar": "• Buổi trong ngày: 早上 (Sáng sớm), 上午 (Sáng), 中午 (Trưa), 下午 (Chiều), 晚上 (Tối)."
+      },
+      {
+        "hanzi": "今天",
+        "pinyin": "",
+        "hanviet": "",
+        "meaning": "• Thời gian khác: 今天 (Hôm nay), 明天 (Ngày mai), 昨天 (Hôm qua), 现在 (Bây giờ), 点 (Giờ), 分 (Phút), 月 (Tháng), 日 (Ngày), 时间 (Thời gian).",
+        "example": "",
+        "note": "Ngữ pháp / Mẫu câu",
+        "confusing": "",
+        "grammar": "• Thời gian khác: 今天 (Hôm nay), 明天 (Ngày mai), 昨天 (Hôm qua), 现在 (Bây giờ), 点 (Giờ), 分 (Phút), 月 (Tháng), 日 (Ngày), 时间 (Thời gian)."
+      },
+      {
+        "hanzi": "以前",
+        "pinyin": "",
+        "hanviet": "",
+        "meaning": "• Trạng thái: 以前 (Trước đây), 以后 (Sau này), 刚才 (Vừa nãy).",
+        "example": "",
+        "note": "Ngữ pháp / Mẫu câu",
+        "confusing": "",
+        "grammar": "• Trạng thái: 以前 (Trước đây), 以后 (Sau này), 刚才 (Vừa nãy)."
+      },
+      {
+        "hanzi": "来",
+        "pinyin": "",
+        "hanviet": "",
+        "meaning": "• Hành động: 来 (đến), 去 (đi), 回 (về), 进 (vào), 坐 (ngồi), 喝 (uống), 吃 (ăn), 买 (mua), 卖 (bán), 学/学习 (học), 工作 (làm việc), 休息 (nghỉ ngơi), 看 (xem/đọc/thăm), 听 (nghe), 说/说话 (nói), 写 (viết), 认识 (quen biết), 觉得 (cảm thấy), 介绍 (giới thiệu), 叫 (tên là), 找 (tìm/thối tiền), 睡觉 (ngủ), 玩 (chơi), 运动 (vận động), 旅游 (du lịch), 开车 (lái xe), 刷 (lướt tiktok).",
+        "example": "",
+        "note": "Ngữ pháp / Mẫu câu",
+        "confusing": "",
+        "grammar": "• Hành động: 来 (đến), 去 (đi), 回 (về), 进 (vào), 坐 (ngồi), 喝 (uống), 吃 (ăn), 买 (mua), 卖 (bán), 学/学习 (học), 工作 (làm việc), 休息 (nghỉ ngơi), 看 (xem/đọc/thăm), 听 (nghe), 说/说话 (nói), 写 (viết), 认识 (quen biết), 觉得 (cảm thấy), 介绍 (giới thiệu), 叫 (tên là), 找 (tìm/thối tiền), 睡觉 (ngủ), 玩 (chơi), 运动 (vận động), 旅游 (du lịch), 开车 (lái xe), 刷 (lướt tiktok)."
+      },
+      {
+        "hanzi": "大",
+        "pinyin": "",
+        "hanviet": "",
+        "meaning": "• Tính từ: 大 (lớn), 小 (nhỏ), 累 (mệt), 忙 (bận), 难 (khó), 贵 (đắt), 便宜 (rẻ), 好 (tốt), 美 (đẹp), 漂亮 (rất đẹp), 高兴 (vui vẻ), 热 (nóng), 冷 (lạnh), 白 (trắng), 男 (nam).",
+        "example": "",
+        "note": "Ngữ pháp / Mẫu câu",
+        "confusing": "",
+        "grammar": "• Tính từ: 大 (lớn), 小 (nhỏ), 累 (mệt), 忙 (bận), 难 (khó), 贵 (đắt), 便宜 (rẻ), 好 (tốt), 美 (đẹp), 漂亮 (rất đẹp), 高兴 (vui vẻ), 热 (nóng), 冷 (lạnh), 白 (trắng), 男 (nam)."
+      },
+      {
+        "hanzi": "家",
+        "pinyin": "",
+        "hanviet": "",
+        "meaning": "• Địa điểm: 家 (nhà), 老家 (quê), 学校 (trường), 大学 (đại học), 银行 (ngân hàng), 饭店 (nhà hàng), 饭馆 (tiệm cơm), 酒店 (khách sạn), 医院 (bệnh viện), 公园 (công viên), 中国 (Trung Quốc), 越南 (Việt Nam), 美国 (Mỹ), 德国, 日本, 法国, 韩国, 俄国 (Nga).",
+        "example": "",
+        "note": "Ngữ pháp / Mẫu câu",
+        "confusing": "",
+        "grammar": "• Địa điểm: 家 (nhà), 老家 (quê), 学校 (trường), 大学 (đại học), 银行 (ngân hàng), 饭店 (nhà hàng), 饭馆 (tiệm cơm), 酒店 (khách sạn), 医院 (bệnh viện), 公园 (công viên), 中国 (Trung Quốc), 越南 (Việt Nam), 美国 (Mỹ), 德国, 日本, 法国, 韩国, 俄国 (Nga)."
+      },
+      {
+        "hanzi": "飞机",
+        "pinyin": "",
+        "hanviet": "",
+        "meaning": "• Phương tiện: 飞机 (máy bay), 火车 (tàu hỏa), 车 (xe), 坐车 (đi xe), 开车 (lái xe).",
+        "example": "",
+        "note": "Ngữ pháp / Mẫu câu",
+        "confusing": "",
+        "grammar": "• Phương tiện: 飞机 (máy bay), 火车 (tàu hỏa), 车 (xe), 坐车 (đi xe), 开车 (lái xe)."
+      },
+      {
+        "hanzi": "几",
+        "pinyin": "",
+        "hanviet": "",
+        "meaning": "◦ 几 (jǐ): Dùng cho số lượng nhỏ < 10 (Ví dụ: 你家有几口人?).",
+        "example": "",
+        "note": "Ngữ pháp / Mẫu câu",
+        "confusing": "",
+        "grammar": "◦ 几 (jǐ): Dùng cho số lượng nhỏ < 10 (Ví dụ: 你家有几口人?)."
+      },
+      {
+        "hanzi": "多少",
+        "pinyin": "",
+        "hanviet": "",
+        "meaning": "◦ 多少 (duōshǎo): Dùng cho số lượng lớn (Ví dụ: 一共多少钱?).",
+        "example": "",
+        "note": "Ngữ pháp / Mẫu câu",
+        "confusing": "",
+        "grammar": "◦ 多少 (duōshǎo): Dùng cho số lượng lớn (Ví dụ: 一共多少钱?)."
+      },
+      {
+        "hanzi": "要",
+        "pinyin": "",
+        "hanviet": "",
+        "meaning": "◦ 要 (yào): Muốn, cần, phải (quyết tâm cao).",
+        "example": "",
+        "note": "Ngữ pháp / Mẫu câu",
+        "confusing": "",
+        "grammar": "◦ 要 (yào): Muốn, cần, phải (quyết tâm cao)."
+      },
+      {
+        "hanzi": "想",
+        "pinyin": "",
+        "hanviet": "",
+        "meaning": "◦ 想 (xiǎng): Muốn, định (mong muốn); Nhớ (khi đi với danh từ).",
+        "example": "",
+        "note": "Ngữ pháp / Mẫu câu",
+        "confusing": "",
+        "grammar": "◦ 想 (xiǎng): Muốn, định (mong muốn); Nhớ (khi đi với danh từ)."
+      },
+      {
+        "hanzi": "会",
+        "pinyin": "",
+        "hanviet": "",
+        "meaning": "◦ 会 (huì) / 能 (néng) / 可以 (kěyǐ): Biết (qua học tập) / Có thể (khả năng/cho phép).",
+        "example": "",
+        "note": "Ngữ pháp / Mẫu câu",
+        "confusing": "",
+        "grammar": "◦ 会 (huì) / 能 (néng) / 可以 (kěyǐ): Biết (qua học tập) / Có thể (khả năng/cho phép)."
+      },
+      {
+        "hanzi": "你好",
+        "pinyin": "",
+        "hanviet": "",
+        "meaning": "• Chào hỏi: 你好 (Chào bạn), 很高兴认识您 (Rất vui quen biết ngài).",
+        "example": "",
+        "note": "Ngữ pháp / Mẫu câu",
+        "confusing": "",
+        "grammar": "• Chào hỏi: 你好 (Chào bạn), 很高兴认识您 (Rất vui quen biết ngài)."
+      },
+      {
+        "hanzi": "我来介绍",
+        "pinyin": "",
+        "hanviet": "",
+        "meaning": "• Giới thiệu: 我来介绍一下 (Tôi xin giới thiệu một chút), 我叫... (Tôi tên là...).",
+        "example": "",
+        "note": "Ngữ pháp / Mẫu câu",
+        "confusing": "",
+        "grammar": "• Giới thiệu: 我来介绍一下 (Tôi xin giới thiệu một chút), 我叫... (Tôi tên là...)."
+      },
+      {
+        "hanzi": "便宜一点",
+        "pinyin": "",
+        "hanviet": "",
+        "meaning": "• Mua sắm: 便宜一点吧 (Rẻ chút đi), 找钱 (thối tiền), 刷卡/扫码 (quẹt thẻ/quét mã).",
+        "example": "",
+        "note": "Ngữ pháp / Mẫu câu",
+        "confusing": "",
+        "grammar": "• Mua sắm: 便宜一点吧 (Rẻ chút đi), 找钱 (thối tiền), 刷卡/扫码 (quẹt thẻ/quét mã)."
+      },
+      {
+        "hanzi": "点菜",
+        "pinyin": "",
+        "hanviet": "",
+        "meaning": "• Ăn uống: 点菜 (gọi món), 上菜 (lên món), 再来一个 (lấy thêm cái nữa).",
+        "example": "",
+        "note": "Ngữ pháp / Mẫu câu",
+        "confusing": "",
+        "grammar": "• Ăn uống: 点菜 (gọi món), 上菜 (lên món), 再来一个 (lấy thêm cái nữa)."
+      },
+      {
+        "hanzi": "无话可说",
+        "pinyin": "",
+        "hanviet": "",
+        "meaning": "◦ 无话可说 (wú huà kě shuō): Cạn lời.",
+        "example": "",
+        "note": "Ngữ pháp / Mẫu câu",
+        "confusing": "",
+        "grammar": "◦ 无话可说 (wú huà kě shuō): Cạn lời."
+      },
+      {
+        "hanzi": "以为",
+        "pinyin": "",
+        "hanviet": "",
+        "meaning": "◦ 以为 (yǐwéi): Tưởng là (thường là nhầm lẫn).",
+        "example": "",
+        "note": "Ngữ pháp / Mẫu câu",
+        "confusing": "",
+        "grammar": "◦ 以为 (yǐwéi): Tưởng là (thường là nhầm lẫn)."
+      },
+      {
+        "hanzi": "我也是",
+        "pinyin": "",
+        "hanviet": "",
+        "meaning": "◦ 我也是 (wǒ yě shì): Tôi cũng vậy.",
+        "example": "",
+        "note": "Ngữ pháp / Mẫu câu",
+        "confusing": "",
+        "grammar": "◦ 我也是 (wǒ yě shì): Tôi cũng vậy."
+      },
+      {
+        "hanzi": "---",
+        "pinyin": "",
+        "hanviet": "",
+        "meaning": "Khi đi với Động từ (Hành động)",
+        "example": "",
+        "note": "Ngữ pháp / Mẫu câu",
+        "confusing": "",
+        "grammar": "Khi đi với Động từ (Hành động)"
+      },
+      {
+        "hanzi": "要",
+        "pinyin": "",
+        "hanviet": "",
+        "meaning": "• 要 (yào): Thể hiện một mong muốn mang tính quyết định, bắt buộc hoặc nhu cầu cần thiết phải thực hiện ngay.",
+        "example": "",
+        "note": "Ngữ pháp / Mẫu câu",
+        "confusing": "",
+        "grammar": "• 要 (yào): Thể hiện một mong muốn mang tính quyết định, bắt buộc hoặc nhu cầu cần thiết phải thực hiện ngay."
+      },
+      {
+        "hanzi": "我要喝咖",
+        "pinyin": "",
+        "hanviet": "",
+        "meaning": "◦ Ví dụ: 我要喝咖啡 (Tôi muốn/cần uống cà phê - mang nghĩa quyết định sẽ uống).",
+        "example": "",
+        "note": "Ngữ pháp / Mẫu câu",
+        "confusing": "",
+        "grammar": "◦ Ví dụ: 我要喝咖啡 (Tôi muốn/cần uống cà phê - mang nghĩa quyết định sẽ uống)."
+      },
+      {
+        "hanzi": "想",
+        "pinyin": "",
+        "hanviet": "",
+        "meaning": "• 想 (xiǎng): Thể hiện mong muốn, dự định hoặc một suy nghĩ chủ quan, nhẹ nhàng và chưa chắc chắn sẽ thực hiện ngay.",
+        "example": "",
+        "note": "Ngữ pháp / Mẫu câu",
+        "confusing": "",
+        "grammar": "• 想 (xiǎng): Thể hiện mong muốn, dự định hoặc một suy nghĩ chủ quan, nhẹ nhàng và chưa chắc chắn sẽ thực hiện ngay."
+      },
+      {
+        "hanzi": "我想喝咖",
+        "pinyin": "",
+        "hanviet": "",
+        "meaning": "◦ Ví dụ: 我想喝咖啡 (Tôi muốn uống cà phê - thể hiện tâm tư, mong muốn).",
+        "example": "",
+        "note": "Ngữ pháp / Mẫu câu",
+        "confusing": "",
+        "grammar": "◦ Ví dụ: 我想喝咖啡 (Tôi muốn uống cà phê - thể hiện tâm tư, mong muốn)."
+      },
+      {
+        "hanzi": "---",
+        "pinyin": "",
+        "hanviet": "",
+        "meaning": "Khi đi với Danh từ (Vật/Việc/Người)",
+        "example": "",
+        "note": "Ngữ pháp / Mẫu câu",
+        "confusing": "",
+        "grammar": "Khi đi với Danh từ (Vật/Việc/Người)"
+      },
+      {
+        "hanzi": "---",
+        "pinyin": "",
+        "hanviet": "",
+        "meaning": "Đây là điểm khác biệt quan trọng nhất giúp bạn tránh nhầm lẫn:",
+        "example": "",
+        "note": "Ngữ pháp / Mẫu câu",
+        "confusing": "",
+        "grammar": "Đây là điểm khác biệt quan trọng nhất giúp bạn tránh nhầm lẫn:"
+      },
+      {
+        "hanzi": "要",
+        "pinyin": "",
+        "hanviet": "",
+        "meaning": "• 要 + Danh từ: Nghĩa là muốn có/lấy món đồ đó.",
+        "example": "",
+        "note": "Ngữ pháp / Mẫu câu",
+        "confusing": "",
+        "grammar": "• 要 + Danh từ: Nghĩa là muốn có/lấy món đồ đó."
+      },
+      {
+        "hanzi": "我要咖啡",
+        "pinyin": "",
+        "hanviet": "",
+        "meaning": "◦ Ví dụ: 我要咖啡 (Tôi muốn [lấy] cà phê).",
+        "example": "",
+        "note": "Ngữ pháp / Mẫu câu",
+        "confusing": "",
+        "grammar": "◦ Ví dụ: 我要咖啡 (Tôi muốn [lấy] cà phê)."
+      },
+      {
+        "hanzi": "想",
+        "pinyin": "",
+        "hanviet": "",
+        "meaning": "• 想 + Danh từ: Nghĩa là nhớ.",
+        "example": "",
+        "note": "Ngữ pháp / Mẫu câu",
+        "confusing": "",
+        "grammar": "• 想 + Danh từ: Nghĩa là nhớ."
+      },
+      {
+        "hanzi": "我想家",
+        "pinyin": "",
+        "hanviet": "",
+        "meaning": "◦ Ví dụ: 我想家 (Tôi nhớ nhà) hoặc 我想你 (Anh nhớ em).",
+        "example": "",
+        "note": "Ngữ pháp / Mẫu câu",
+        "confusing": "",
+        "grammar": "◦ Ví dụ: 我想家 (Tôi nhớ nhà) hoặc 我想你 (Anh nhớ em)."
+      },
+      {
+        "hanzi": "很",
+        "pinyin": "",
+        "hanviet": "",
+        "meaning": "• Bạn có thể dùng các phó từ chỉ mức độ như 很 (hěn - rất) trước 想 để nhấn mạnh tình cảm: 我很想喝咖啡 (Tôi rất muốn uống cà phê) hoặc 我很想家 (Tôi rất nhớ nhà).",
+        "example": "",
+        "note": "Ngữ pháp / Mẫu câu",
+        "confusing": "",
+        "grammar": "• Bạn có thể dùng các phó từ chỉ mức độ như 很 (hěn - rất) trước 想 để nhấn mạnh tình cảm: 我很想喝咖啡 (Tôi rất muốn uống cà phê) hoặc 我很想家 (Tôi rất nhớ nhà)."
+      },
+      {
+        "hanzi": "要",
+        "pinyin": "",
+        "hanviet": "",
+        "meaning": "• Ngược lại, người ta không dùng phó từ chỉ mức độ trước 要 (không tồn tại cấu trúc \"hěn yào\").",
+        "example": "",
+        "note": "Ngữ pháp / Mẫu câu",
+        "confusing": "",
+        "grammar": "• Ngược lại, người ta không dùng phó từ chỉ mức độ trước 要 (không tồn tại cấu trúc \"hěn yào\")."
+      },
+      {
+        "hanzi": "想",
+        "pinyin": "",
+        "hanviet": "",
+        "meaning": "• 想 (xiǎng): Ngoài nghĩa muốn và nhớ, từ này còn có nghĩa là nghĩ, nghĩ rằng (think/consider).",
+        "example": "",
+        "note": "Ngữ pháp / Mẫu câu",
+        "confusing": "",
+        "grammar": "• 想 (xiǎng): Ngoài nghĩa muốn và nhớ, từ này còn có nghĩa là nghĩ, nghĩ rằng (think/consider)."
+      },
+      {
+        "hanzi": "要",
+        "pinyin": "",
+        "hanviet": "",
+        "meaning": "• 要 (yào): Trong một số ngữ cảnh mua sắm, nó còn mang nghĩa là cần/lấy. Ví dụ: 你要买什么? (Bạn muốn mua gì?).",
+        "example": "",
+        "note": "Ngữ pháp / Mẫu câu",
+        "confusing": "",
+        "grammar": "• 要 (yào): Trong một số ngữ cảnh mua sắm, nó còn mang nghĩa là cần/lấy. Ví dụ: 你要买什么? (Bạn muốn mua gì?)."
+      }
+    ]
+  }
+]
