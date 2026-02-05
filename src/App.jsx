@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { BookOpen, Brain, Search, LayoutGrid, ChevronRight, ChevronLeft, RotateCcw, CheckCircle2, XCircle, Home, FileText, Download, Star, Volume2 } from 'lucide-react';
+import { BookOpen, Brain, Search, LayoutGrid, ChevronRight, ChevronLeft, RotateCcw, CheckCircle2, XCircle, Home, FileText, Download, Star, Volume2, MessageSquare, Send, Sparkles } from 'lucide-react';
 
 import hskData from './data/hsk1.json';
 
@@ -17,6 +17,9 @@ const Header = ({ currentView, setView }) => (
       </button>
       <button className={`nav-item ${currentView === 'quiz' ? 'active' : ''}`} onClick={() => setView('quiz')}>
         <CheckCircle2 size={18} /> <span className="nav-text">Quiz</span>
+      </button>
+      <button className={`nav-item ${currentView === 'chat' ? 'active' : ''}`} onClick={() => setView('chat')}>
+        <MessageSquare size={18} /> <span className="nav-text">Chat</span>
       </button>
       <button className={`nav-item ${currentView === 'file' ? 'active' : ''}`} onClick={() => setView('file')}>
         <FileText size={18} /> <span className="nav-text">Tài liệu</span>
@@ -113,8 +116,6 @@ const Flashcard = ({ word, onNext, onPrev, isFirst, isLast }) => {
     window.speechSynthesis.speak(utterance);
   };
 
-
-
   return (
     <div className="flashcard-container">
       <div className={`flashcard ${isFlipped ? 'flipped' : ''}`} onClick={() => setIsFlipped(!isFlipped)}>
@@ -206,13 +207,10 @@ const QuizView = ({ words, onFinish }) => {
       window.speechSynthesis.speak(utterance);
     }
 
-
-
     if (word.hanzi === words[currentIndex].hanzi) {
       setScore(score + 1);
     }
   };
-
 
   const handleNext = () => {
     if (currentIndex + 1 < words.length) {
@@ -273,6 +271,103 @@ const QuizView = ({ words, onFinish }) => {
   );
 };
 
+// --- Chat Component ---
+const ChatView = () => {
+  const [messages, setMessages] = useState([
+    { role: 'bot', content: '你好！我是你的中文助手。你想聊什么？', pinyin: 'Nǐ hǎo! Wǒ shì nǐ de Zhōngwén zhùshǒu. Nǐ xiǎng liáo shénme?' }
+  ]);
+  const [input, setInput] = useState('');
+  const [isTyping, setIsTyping] = useState(false);
+
+  const speak = (text) => {
+    if (!window.speechSynthesis) return;
+    window.speechSynthesis.cancel();
+    const utterance = new SpeechSynthesisUtterance(text);
+    const voices = window.speechSynthesis.getVoices();
+    const zhVoice = voices.find(v => v.lang.includes('zh-CN')) ||
+      voices.find(v => v.lang.includes('zh'));
+    if (zhVoice) utterance.voice = zhVoice;
+    utterance.lang = 'zh-CN';
+    utterance.rate = 0.9;
+    window.speechSynthesis.speak(utterance);
+  };
+
+  const handleSend = async () => {
+    if (!input.trim()) return;
+
+    const userMsg = { role: 'user', content: input };
+    setMessages(prev => [...prev, userMsg]);
+    setInput('');
+    setIsTyping(true);
+
+    setTimeout(() => {
+      let botResponse = "";
+      let feedback = "";
+      let pinyin = "";
+
+      const lowerInput = input.toLowerCase();
+      if (lowerInput.includes('你好') || lowerInput.includes('nǐ hǎo')) {
+        botResponse = "你好！今天过得怎么样？";
+        pinyin = "Nǐ hǎo! Jīntiān guò de zěnmeyàng?";
+        feedback = "Chào rất tốt! Bạn có thể thử: '最近怎么样？' (Dạo này thế nào?)";
+      } else if (lowerInput.includes('谢谢') || lowerInput.includes('xièxie')) {
+        botResponse = "不客气！我很乐意帮助你。";
+        pinyin = "Bú kèqi! Wǒ hěn lèyì bāngzhù nǐ.";
+        feedback = "Rất chuẩn! Trong khẩu ngữ cũng có thể nói: '没事' (méshì).";
+      } else if (lowerInput.includes('再见') || lowerInput.includes('zàijiàn')) {
+        botResponse = "再见！下次聊。";
+        pinyin = "Zàijiàn! Xiàcì liáo.";
+        feedback = "Tạm biệt chính xác! Người trẻ Trung Quốc hay nói '拜拜' (bàibài).";
+      } else {
+        botResponse = "听起来很有趣！你能多跟我说说吗？";
+        pinyin = "Tīng qǐlái hěn yǒùqù! Nǐ néng duō gēn wǒ shuō shuō ma?";
+        feedback = "Câu ổn. Hãy thử thêm các đại từ '我', '你' để tự nhiên hơn.";
+      }
+
+      const botMsg = { role: 'bot', content: botResponse, pinyin, feedback };
+      setMessages(prev => [...prev, botMsg]);
+      setIsTyping(false);
+      speak(botResponse);
+    }, 1200);
+  };
+
+  return (
+    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="chat-container glass-panel">
+      <div className="chat-messages">
+        {messages.map((msg, idx) => (
+          <div key={idx} className={`message-wrapper ${msg.role}`}>
+            <div className={`message-bubble ${msg.role}`}>
+              <p className={msg.role === 'bot' ? 'chinese' : ''}>{msg.content}</p>
+              {msg.pinyin && <p className="msg-pinyin">{msg.pinyin}</p>}
+              {msg.role === 'bot' && (
+                <button className="msg-audio" onClick={() => speak(msg.content)}>
+                  <Volume2 size={14} />
+                </button>
+              )}
+            </div>
+            {msg.feedback && (
+              <motion.div initial={{ opacity: 0, x: -10 }} animate={{ opacity: 1, x: 0 }} className="msg-feedback">
+                <Sparkles size={14} className="sparkle" /> {msg.feedback}
+              </motion.div>
+            )}
+          </div>
+        ))}
+        {isTyping && <div className="typing-indicator">Đối phương đang soạn tin...</div>}
+      </div>
+      <div className="chat-input-area">
+        <input
+          type="text"
+          placeholder="Nhắn tin (Tiếng Trung/Pinyin)..."
+          value={input}
+          onChange={(e) => setInput(e.target.value)}
+          onKeyDown={(e) => e.key === 'Enter' && handleSend()}
+        />
+        <button className="btn-send" onClick={handleSend}><Send size={20} /></button>
+      </div>
+    </motion.div>
+  );
+};
+
 // --- Main App Component ---
 function App() {
   const [view, setView] = useState('home');
@@ -297,6 +392,8 @@ function App() {
           )}
 
           {view === 'file' && <FileView key="file" />}
+
+          {view === 'chat' && <ChatView key="chat" />}
 
           {view === 'flashcards' && selectedTheme && (
             <motion.div
