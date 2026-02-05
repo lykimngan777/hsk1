@@ -274,7 +274,7 @@ const QuizView = ({ words, onFinish }) => {
 // --- Chat Component ---
 const ChatView = () => {
   const [messages, setMessages] = useState([
-    { role: 'bot', content: '你好！我是你的中文助手。你想聊什么？', pinyin: 'Nǐ hǎo! Wǒ shì nǐ de Zhōngwén zhùshǒu. Nǐ xiǎng liáo shénme?' }
+    { role: 'bot', content: '你好！我是你的中文助手。你想聊什么？', pinyin: 'Nǐ hǎo! Wǒ shì nǐ de Zhōngwén zhùshǒu. Nǐ xiǎng liáo shénme?', translation: 'Xin chào! Tôi là trợ lý tiếng Trung của bạn. Bạn muốn nói về chủ đề gì?' }
   ]);
   const [input, setInput] = useState('');
   const [isTyping, setIsTyping] = useState(false);
@@ -304,27 +304,35 @@ const ChatView = () => {
       let botResponse = "";
       let feedback = "";
       let pinyin = "";
+      let translation = "";
+
 
       const lowerInput = input.toLowerCase();
       if (lowerInput.includes('你好') || lowerInput.includes('nǐ hǎo')) {
         botResponse = "你好！今天过得怎么样？";
         pinyin = "Nǐ hǎo! Jīntiān guò de zěnmeyàng?";
+        translation = "Chào bạn! Hôm nay bạn thế nào?";
         feedback = "Chào rất tốt! Bạn có thể thử: '最近怎么样？' (Dạo này thế nào?)";
       } else if (lowerInput.includes('谢谢') || lowerInput.includes('xièxie')) {
         botResponse = "不客气！我很乐意帮助你。";
         pinyin = "Bú kèqi! Wǒ hěn lèyì bāngzhù nǐ.";
+        translation = "Không có gì! Tôi rất vui được giúp bạn.";
         feedback = "Rất chuẩn! Trong khẩu ngữ cũng có thể nói: '没事' (méshì).";
       } else if (lowerInput.includes('再见') || lowerInput.includes('zàijiàn')) {
         botResponse = "再见！下次聊。";
         pinyin = "Zàijiàn! Xiàcì liáo.";
+        translation = "Tạm biệt! Hẹn gặp lại lần sau.";
         feedback = "Tạm biệt chính xác! Người trẻ Trung Quốc hay nói '拜拜' (bàibài).";
       } else {
         botResponse = "听起来很有趣！你能多跟我说说吗？";
         pinyin = "Tīng qǐlái hěn yǒùqù! Nǐ néng duō gēn wǒ shuō shuō ma?";
+        translation = "Nghe có vẻ thú vị đấy! Bạn có thể kể thêm cho tôi nghe không?";
         feedback = "Câu ổn. Hãy thử thêm các đại từ '我', '你' để tự nhiên hơn.";
       }
 
-      const botMsg = { role: 'bot', content: botResponse, pinyin, feedback };
+
+      const botMsg = { role: 'bot', content: botResponse, pinyin, translation, feedback };
+
       setMessages(prev => [...prev, botMsg]);
       setIsTyping(false);
       speak(botResponse);
@@ -339,6 +347,8 @@ const ChatView = () => {
             <div className={`message-bubble ${msg.role}`}>
               <p className={msg.role === 'bot' ? 'chinese' : ''}>{msg.content}</p>
               {msg.pinyin && <p className="msg-pinyin">{msg.pinyin}</p>}
+              {msg.translation && <p className="msg-translation">{msg.translation}</p>}
+
               {msg.role === 'bot' && (
                 <button className="msg-audio" onClick={() => speak(msg.content)}>
                   <Volume2 size={14} />

@@ -592,7 +592,16 @@ body {
   margin-top: 4px;
 }
 
+.msg-translation {
+  font-size: 0.8rem;
+  font-style: italic;
+  opacity: 0.8;
+  margin-top: 2px;
+  color: var(--primary);
+}
+
 .msg-audio {
+
   background: transparent;
   border: none;
   color: var(--primary);
