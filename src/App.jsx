@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { BookOpen, Brain, Search, LayoutGrid, ChevronRight, ChevronLeft, RotateCcw, CheckCircle2, XCircle, Home, FileText, Download, Star } from 'lucide-react';
+import { BookOpen, Brain, Search, LayoutGrid, ChevronRight, ChevronLeft, RotateCcw, CheckCircle2, XCircle, Home, FileText, Download, Star, Volume2 } from 'lucide-react';
+
 import hskData from './data/hsk1.json';
 
 // --- Header Component ---
@@ -93,16 +94,43 @@ const Flashcard = ({ word, onNext, onPrev, isFirst, isLast }) => {
     setIsFlipped(false);
   }, [word]);
 
+  const speak = (e) => {
+    if (e) e.stopPropagation();
+    if (!window.speechSynthesis) return;
+
+    window.speechSynthesis.cancel();
+    const utterance = new SpeechSynthesisUtterance(word.hanzi);
+
+    // Find a Chinese voice
+    const voices = window.speechSynthesis.getVoices();
+    const zhVoice = voices.find(v => v.lang.includes('zh-CN')) ||
+      voices.find(v => v.lang.includes('zh')) ||
+      voices[0];
+
+    if (zhVoice) utterance.voice = zhVoice;
+    utterance.lang = 'zh-CN';
+    utterance.rate = 0.8;
+    window.speechSynthesis.speak(utterance);
+  };
+
+
+
   return (
     <div className="flashcard-container">
       <div className={`flashcard ${isFlipped ? 'flipped' : ''}`} onClick={() => setIsFlipped(!isFlipped)}>
         <div className="card-face card-front glass-panel">
           <span className="card-label">Hanzi</span>
+          <button className="btn-audio-mini" onClick={speak}>
+            <Volume2 size={24} />
+          </button>
           <h2 className="chinese text-huge">{word.hanzi}</h2>
           <p className="hint">Chạm để xem nghĩa</p>
         </div>
         <div className="card-face card-back glass-panel">
           <div className="card-back-content">
+            <button className="btn-audio-mini" onClick={speak}>
+              <Volume2 size={24} />
+            </button>
             <div className="info-group">
               <span className="card-label">Pinyin</span>
               <p className="pinyin text-large">{word.pinyin}</p>
@@ -123,6 +151,9 @@ const Flashcard = ({ word, onNext, onPrev, isFirst, isLast }) => {
       <div className="card-controls">
         <button disabled={isFirst} onClick={(e) => { e.stopPropagation(); onPrev(); }} className="btn-secondary">
           <ChevronLeft size={18} />
+        </button>
+        <button onClick={speak} className="btn-primary" style={{ padding: '12px' }}>
+          <Volume2 size={22} />
         </button>
         <button disabled={isLast} onClick={(e) => { e.stopPropagation(); onNext(); }} className="btn-primary">
           Tiếp theo <ChevronRight size={18} />
@@ -161,10 +192,27 @@ const QuizView = ({ words, onFinish }) => {
     if (isAnswered) return;
     setSelectedOption(word);
     setIsAnswered(true);
+
+    // Auto-play pronunciation
+    if (window.speechSynthesis) {
+      window.speechSynthesis.cancel();
+      const utterance = new SpeechSynthesisUtterance(words[currentIndex].hanzi);
+      const voices = window.speechSynthesis.getVoices();
+      const zhVoice = voices.find(v => v.lang.includes('zh-CN')) ||
+        voices.find(v => v.lang.includes('zh'));
+      if (zhVoice) utterance.voice = zhVoice;
+      utterance.lang = 'zh-CN';
+      utterance.rate = 0.8;
+      window.speechSynthesis.speak(utterance);
+    }
+
+
+
     if (word.hanzi === words[currentIndex].hanzi) {
       setScore(score + 1);
     }
   };
+
 
   const handleNext = () => {
     if (currentIndex + 1 < words.length) {
