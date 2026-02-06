@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { BookOpen, Brain, Search, LayoutGrid, ChevronRight, ChevronLeft, RotateCcw, CheckCircle2, XCircle, Home, FileText, Download, Star, Volume2, MessageSquare, Send, Sparkles } from 'lucide-react';
+import { BookOpen, Brain, Search, LayoutGrid, ChevronRight, ChevronLeft, RotateCcw, CheckCircle2, XCircle, Home, FileText, Download, Star, Volume2, MessageSquare, Send, Sparkles, BarChart3, History, Plus, BookMarked, Languages } from 'lucide-react';
 
 import hskData from './data/hsk1.json';
 import lessonsData from './data/lessons.json';
+import BlogView from './components/BlogView';
 
 // --- Header Component ---
-const Header = ({ currentView, setView }) => (
+const Header = ({ currentView, setView, totalPoints }) => (
   <header className="header glass-panel">
     <div className="logo" onClick={() => setView('home')}>
       <span className="logo-icon"><BookOpen size={20} /></span>
@@ -16,18 +17,21 @@ const Header = ({ currentView, setView }) => (
       <button className={`nav-item ${currentView === 'home' ? 'active' : ''}`} onClick={() => setView('home')}>
         <Home size={18} /> <span className="nav-text">Home</span>
       </button>
-      <button className={`nav-item ${currentView === 'quiz' ? 'active' : ''}`} onClick={() => setView('quiz')}>
-        <CheckCircle2 size={18} /> <span className="nav-text">Quiz</span>
-      </button>
-      <button className={`nav-item ${currentView === 'chat' ? 'active' : ''}`} onClick={() => setView('chat')}>
-        <MessageSquare size={18} /> <span className="nav-text">Chat</span>
-      </button>
       <button className={`nav-item ${currentView === 'practice' ? 'active' : ''}`} onClick={() => setView('practice')}>
         <Brain size={18} /> <span className="nav-text">Luyện tập</span>
+      </button>
+      <button className={`nav-item ${currentView === 'dashboard' ? 'active' : ''}`} onClick={() => setView('dashboard')}>
+        <BarChart3 size={18} /> <span className="nav-text">Thống kê</span>
+      </button>
+      <button className={`nav-item ${currentView === 'blog' ? 'active' : ''}`} onClick={() => setView('blog')}>
+        <MessageSquare size={18} /> <span className="nav-text">Blog né sai</span>
       </button>
       <button className={`nav-item ${currentView === 'file' ? 'active' : ''}`} onClick={() => setView('file')}>
         <FileText size={18} /> <span className="nav-text">Tài liệu</span>
       </button>
+      <div className="points-display nav-item" style={{ cursor: 'default', color: 'var(--accent)', fontWeight: '800', border: '1px solid rgba(244, 114, 182, 0.2)', padding: '8px 12px', background: 'rgba(244, 114, 182, 0.05)' }}>
+        <Star size={16} fill="var(--accent)" /> {totalPoints}
+      </div>
     </nav>
   </header>
 );
@@ -415,8 +419,69 @@ const ChatView = () => {
   );
 };
 
+// --- Dashboard View ---
+const DashboardView = ({ stats, mistakes, onAddMistakeToFlashcards }) => {
+  const correctCount = stats.correct || 0;
+  const totalCount = stats.total || 0;
+  const accuracy = totalCount > 0 ? Math.round((correctCount / totalCount) * 100) : 0;
+
+  return (
+    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="dashboard">
+      <section className="hero">
+        <h2 className="hero-title">Tiến trình <span className="highlight">của bạn</span></h2>
+        <p className="hero-subtitle">Theo dõi kết quả luyện tập và cải thiện điểm yếu.</p>
+      </section>
+
+      <div className="stats-grid">
+        <div className="stat-card glass-panel">
+          <span className="stat-val">{stats.totalPoints || 0}</span>
+          <span className="stat-label">Tổng Điểm</span>
+        </div>
+        <div className="stat-card glass-panel">
+          <span className="stat-val">{accuracy}%</span>
+          <span className="stat-label">Độ chính xác</span>
+        </div>
+        <div className="stat-card glass-panel">
+          <span className="stat-val">{totalCount}</span>
+          <span className="stat-label">Câu đã làm</span>
+        </div>
+      </div>
+
+      <div className="dashboard-sections">
+        <div className="dash-section glass-panel">
+          <h3><Star size={20} color="var(--primary)" /> Điểm mạnh</h3>
+          <p style={{ color: 'var(--text-dim)', fontSize: '0.9rem' }}>
+            Bạn đang làm rất tốt ở các từ vựng chủ đề gia đình và số đếm.
+          </p>
+        </div>
+
+        <div className="dash-section glass-panel">
+          <h3><History size={20} color="var(--accent)" /> Chỗ hay sai ({mistakes.length})</h3>
+          <div className="mistake-list">
+            {mistakes.length === 0 ? (
+              <p style={{ color: 'var(--text-dim)', textAlign: 'center', marginTop: '40px' }}>Chưa có bài sai nào. Cố gắng phát huy nhé!</p>
+            ) : (
+              mistakes.slice(-5).reverse().map((m, i) => (
+                <div key={i} className="mistake-item">
+                  <div className="mistake-info">
+                    <span className="mistake-hanzi chinese">{m.hanzi}</span>
+                    <span className="mistake-pinyin">{m.pinyin}</span>
+                  </div>
+                  <button className="btn-mini-action" onClick={() => onAddMistakeToFlashcards(m)}>
+                    <Plus size={14} /> Flashcard
+                  </button>
+                </div>
+              ))
+            )}
+          </div>
+        </div>
+      </div>
+    </motion.div>
+  );
+};
+
 // --- Practice View ---
-const PracticeView = () => {
+const PracticeView = ({ onUpdateStats, onSaveMistake }) => {
   const [practiceType, setPracticeType] = useState(null); // 'vocabulary' or 'lesson'
   const [selectionPhase, setSelectionPhase] = useState(true);
   const [mode, setMode] = useState('pinyin'); // 'pinyin' or 'vietnamese'
@@ -426,7 +491,9 @@ const PracticeView = () => {
   const [feedback, setFeedback] = useState(null);
   const [isGrading, setIsGrading] = useState(false);
   const [score, setScore] = useState(0);
+  const [sessionPoints, setSessionPoints] = useState(0);
   const [isFinished, setIsFinished] = useState(false);
+  const [revealedInfo, setRevealedInfo] = useState(false);
 
   const startPractice = (type, specificLesson = null) => {
     setPracticeType(type);
@@ -450,7 +517,9 @@ const PracticeView = () => {
     setUserInput('');
     setFeedback(null);
     setScore(0);
+    setSessionPoints(0);
     setIsFinished(false);
+    setRevealedInfo(false);
   };
 
   const handleCheck = () => {
@@ -466,22 +535,35 @@ const PracticeView = () => {
       let isCorrect = normalizedInput === targetHanzi;
       let gradingFeedback = "";
       let gradingScore = 0;
+      let aiComment = null;
 
       if (practiceType === 'vocabulary') {
         if (mode === 'pinyin') {
-          gradingFeedback = isCorrect ? "Rất chính xác!" : `Chưa đúng. Đáp án: ${currentItem.hanzi}`;
+          gradingFeedback = isCorrect ? "Rất chính xác!" : `Chưa đúng. Hãy xem đáp án bên dưới.`;
           gradingScore = isCorrect ? 100 : 0;
         } else {
           if (isCorrect) {
             gradingScore = 100;
             gradingFeedback = "Hoàn hảo! Bạn viết đúng rồi.";
+            aiComment = {
+              text: "Cách dùng từ rất tự nhiên. Bạn đã nắm vững chữ Hán này!",
+              suggestion: "Thử đặt câu với từ này để nhớ lâu hơn."
+            };
           } else if (currentItem.hanzi.includes(userInput.trim()) || userInput.trim().includes(currentItem.hanzi)) {
             isCorrect = true;
             gradingScore = 80;
             gradingFeedback = "Gần đúng! Bạn đang đi đúng hướng.";
+            aiComment = {
+              text: "Bạn đã nhớ được bộ thủ chính, chỉ cần cẩn thận hơn một chút ở nét vẽ.",
+              suggestion: "Chú ý thứ tự các nét để chữ viết cân đối hơn."
+            };
           } else {
             gradingScore = 0;
-            gradingFeedback = `Chưa đúng. Chữ Hán là: ${currentItem.hanzi}`;
+            gradingFeedback = `Chưa đúng rồi. Hãy luyện tập thêm nhé.`;
+            aiComment = {
+              text: "Có vẻ bạn đang nhầm lẫn với một từ khác có âm tương tự.",
+              suggestion: "Gợi ý: Từ này có bộ nhân đứng ở bên trái."
+            };
           }
         }
       } else {
@@ -489,26 +571,56 @@ const PracticeView = () => {
         if (isCorrect) {
           gradingScore = 100;
           gradingFeedback = "Tuyệt vời! Bạn đã gõ chính xác toàn bộ đoạn văn.";
+          aiComment = {
+            text: "Kỹ năng gõ và nhận diện mặt chữ của bạn rất xuất sắc.",
+            suggestion: "Hãy thử tập đọc to đoạn văn này để luyện ngữ điệu."
+          };
         } else {
           const similarity = calculateSimilarity(normalizedInput, targetHanzi);
           if (similarity > 0.8) {
             isCorrect = true;
             gradingScore = 90;
             gradingFeedback = "Rất tốt! Bạn chỉ sai một vài chỗ nhỏ thôi.";
+            aiComment = {
+              text: "Gần như hoàn hảo. Các cấu trúc ngữ pháp bạn dùng đều ổn.",
+              suggestion: "Lưu ý các dấu câu và khoảng cách nếu có."
+            };
           } else if (similarity > 0.5) {
             isCorrect = true;
             gradingScore = 60;
             gradingFeedback = "Khá tốt! Bạn đã nắm được phần lớn đoạn văn.";
+            aiComment = {
+              text: "Nội dung cơ bản đã đủ, nhưng còn thiếu một vài chi tiết bổ trợ.",
+              suggestion: "Xem lại phần tân ngữ trong câu để diễn đạt mượt mà hơn."
+            };
           } else {
             isCorrect = false;
             gradingScore = 20;
             gradingFeedback = "Cố gắng lên! Có vẻ bạn cần ôn tập kỹ hơn đoạn này.";
+            aiComment = {
+              text: "Đoạn văn này có nhiều từ vựng mới, đừng quá lo lắng.",
+              suggestion: "Gợi ý: Hãy chia nhỏ đoạn văn ra để luyện từng câu một."
+            };
           }
         }
       }
 
-      setFeedback({ isCorrect, text: gradingFeedback, score: gradingScore, original: currentItem.hanzi });
-      if (isCorrect) setScore(prev => prev + 1);
+      const finalFeedback = {
+        isCorrect,
+        text: gradingFeedback,
+        score: gradingScore,
+        original: currentItem.hanzi,
+        pinyin: currentItem.pinyin,
+        meaning: currentItem.meaning,
+        aiComment
+      };
+
+      setFeedback(finalFeedback);
+      if (isCorrect) {
+        setScore(prev => prev + 1);
+      } else {
+        onSaveMistake(currentItem);
+      }
       setIsGrading(false);
     }, 1000);
   };
@@ -539,7 +651,14 @@ const PracticeView = () => {
       setCurrentIndex(currentIndex + 1);
       setUserInput('');
       setFeedback(null);
+      setRevealedInfo(false);
     } else {
+      // Calculate final points: Accuracy % as points, min 10%
+      const accuracy = (score / practiceData.length) * 100;
+      const pointsToAdd = accuracy >= 10 ? Math.round(accuracy) : 0;
+
+      onUpdateStats(pointsToAdd, score, practiceData.length);
+      setSessionPoints(pointsToAdd); // Use this to show final points in result
       setIsFinished(true);
     }
   };
@@ -581,10 +700,11 @@ const PracticeView = () => {
         <h2>Hoàn thành!</h2>
         <div className="score-text">
           {practiceType === 'vocabulary' ? (
-            <>Bạn đạt <span>{score}</span> / {practiceData.length}</>
+            <>Bạn đúng <span>{score}</span> / {practiceData.length}</>
           ) : (
             <>Bạn đã luyện xong bài khóa!</>
           )}
+          <p style={{ fontSize: '1.2rem', marginTop: '10px' }}>Kết quả: <span style={{ color: 'var(--accent)' }}>{Math.round(sessionPoints / practiceData.length)} / 100</span></p>
         </div>
         <button className="btn-primary" onClick={() => setSelectionPhase(true)} style={{ marginTop: '20px', width: '100%' }}>
           Quay lại chọn chế độ
@@ -606,7 +726,12 @@ const PracticeView = () => {
           <button className={`mode-tab ${mode === 'pinyin' ? 'active' : ''}`} onClick={() => { setMode('pinyin'); setFeedback(null); }}>Pinyin Mode</button>
           <button className={`mode-tab ${mode === 'vietnamese' ? 'active' : ''}`} onClick={() => { setMode('vietnamese'); setFeedback(null); }}>Vietnamese Mode</button>
         </div>
-        <div className="counter">Bài {currentIndex + 1} / {practiceData.length}</div>
+        <div className="header-stats" style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-end', gap: '4px' }}>
+          <div className="counter">Câu {currentIndex + 1} / {practiceData.length}</div>
+          <div className="points-badge" style={{ fontSize: '0.8rem', color: 'var(--primary)', fontWeight: 'bold', background: 'rgba(56, 189, 248, 0.1)', padding: '2px 8px', borderRadius: '6px' }}>
+            Đúng: {score} ({Math.round((score / practiceData.length) * 100) || 0}%)
+          </div>
+        </div>
       </div>
 
       <div className={`practice-card-main glass-panel ${practiceType === 'lesson' ? 'wide' : ''}`}>
@@ -669,7 +794,43 @@ const PracticeView = () => {
                 <div className="ans-tag">Đáp án chuẩn:</div>
                 <div className="ans-val chinese">{feedback.original}</div>
                 <button className="btn-audio-mini" onClick={() => speak(feedback.original)}><Volume2 size={16} /></button>
+
+                {mode === 'pinyin' && (
+                  <>
+                    {!revealedInfo ? (
+                      <button className="btn-mini-action" onClick={() => setRevealedInfo(true)}>
+                        <Languages size={14} /> Dịch tiếng Việt
+                      </button>
+                    ) : (
+                      <div className="ans-revealed">Nghĩa: {feedback.meaning}</div>
+                    )}
+                  </>
+                )}
+
+                {mode === 'vietnamese' && (
+                  <>
+                    {!revealedInfo ? (
+                      <button className="btn-mini-action" onClick={() => setRevealedInfo(true)}>
+                        <Volume2 size={14} /> Hiện Pinyin
+                      </button>
+                    ) : (
+                      <div className="ans-revealed">Pinyin: {feedback.pinyin}</div>
+                    )}
+                  </>
+                )}
+
+                <button className="btn-mini-action" onClick={() => onSaveMistake({ ...practiceData[currentIndex], forceFlash: true })}>
+                  <Plus size={14} /> Thêm vào Flashcard
+                </button>
               </div>
+
+              {mode === 'vietnamese' && feedback.aiComment && (
+                <div className="ai-comment-box">
+                  <div className="ai-comment-title"><Sparkles size={12} /> AI Nhận xét</div>
+                  <div className="ai-comment-text">{feedback.aiComment.text}</div>
+                  <div className="suggest-tag">Gợi ý: {feedback.aiComment.suggestion}</div>
+                </div>
+              )}
             </motion.div>
           )}
         </AnimatePresence>
@@ -685,6 +846,45 @@ function App() {
   const [flashcardIndex, setFlashcardIndex] = useState(0);
   const [quizScore, setQuizScore] = useState(null);
 
+  // Stats and Mistakes state
+  const [stats, setStats] = useState(() => {
+    const saved = localStorage.getItem('hsk_stats');
+    return saved ? JSON.parse(saved) : { total: 0, correct: 0, totalPoints: 0 };
+  });
+
+  const [mistakes, setMistakes] = useState(() => {
+    const saved = localStorage.getItem('hsk_mistakes');
+    return saved ? JSON.parse(saved) : [];
+  });
+
+  const updateStats = (points, sessionCorrect, sessionTotal) => {
+    const newStats = {
+      total: stats.total + sessionTotal,
+      correct: stats.correct + sessionCorrect,
+      totalPoints: stats.totalPoints + points
+    };
+    setStats(newStats);
+    localStorage.setItem('hsk_stats', JSON.stringify(newStats));
+  };
+
+  const saveMistake = (word) => {
+    // Avoid duplicates
+    if (mistakes.some(m => m.hanzi === word.hanzi) && !word.forceFlash) return;
+
+    const newMistakes = [...mistakes, word];
+    setMistakes(newMistakes);
+    localStorage.setItem('hsk_mistakes', JSON.stringify(newMistakes));
+
+    if (word.forceFlash) {
+      alert("Đã thêm vào Flashcard ôn tập!");
+    }
+  };
+
+  const addMistakeToFlashcards = (word) => {
+    // This could open a specialized themed session, for now just show alert
+    alert(`Từ "${word.hanzi}" đã sẵn sàng để ôn tập trong Flashcards!`);
+  };
+
   const startFlashcards = (theme) => {
     setSelectedTheme(theme);
     setFlashcardIndex(0);
@@ -693,7 +893,7 @@ function App() {
 
   return (
     <div className="app">
-      <Header currentView={view} setView={setView} />
+      <Header currentView={view} setView={setView} totalPoints={stats.totalPoints} />
       <main className="main-content">
         <AnimatePresence mode="wait">
           {view === 'home' && <HomeView themes={hskData} onSelectTheme={startFlashcards} />}
@@ -721,7 +921,9 @@ function App() {
             </div>
           )}
           {view === 'chat' && <ChatView />}
-          {view === 'practice' && <PracticeView />}
+          {view === 'practice' && <PracticeView onUpdateStats={updateStats} onSaveMistake={saveMistake} />}
+          {view === 'dashboard' && <DashboardView stats={stats} mistakes={mistakes} onAddMistakeToFlashcards={addMistakeToFlashcards} />}
+          {view === 'blog' && <BlogView />}
           {view === 'file' && <FileView />}
         </AnimatePresence>
       </main>

@@ -1,0 +1,809 @@
+{
+    "confusedChars": [
+        {
+            "pair": "人 (rén) vs 入 (rù)",
+            "diff": "人: Hai nét xòe rộng như người đứng. 入: Hai nét khép vào như mũi tên đi vào."
+        },
+        {
+            "pair": "大 (dà) vs 太 (tài)",
+            "diff": "大: Không có chấm. 太: Có thêm một chấm trên cùng (như 'quá lớn')."
+        },
+        {
+            "pair": "未 (wèi) vs 末 (mò)",
+            "diff": "未: Nét ngang trên ngắn (cây chưa mọc hết). 末: Nét ngang trên dài hơn (cây mọc hết)."
+        },
+        {
+            "pair": "己 (jǐ) vs 已 (yǐ) vs 巳 (sì)",
+            "diff": "己: Mở hoàn toàn ở trên. 已: Gần khép ở trên. 巳: Khép kín thành vòng."
+        },
+        {
+            "pair": "土 (tǔ) vs 士 (shì)",
+            "diff": "土: Nét ngang dưới dài hơn nét giữa. 士: Nét ngang dưới ngắn hơn nét giữa."
+        },
+        {
+            "pair": "日 (rì) vs 目 (mù)",
+            "diff": "日: Hình vuông kín, nét giữa xuyên suốt. 目: Có hai nét ngang trong như con mắt."
+        },
+        {
+            "pair": "力 (lì) vs 刀 (dāo)",
+            "diff": "力: Nét dọc trái cắt qua nét ngang. 刀: Nét ngang trên liền mạch như lưỡi dao."
+        },
+        {
+            "pair": "午 (wǔ) vs 牛 (niú)",
+            "diff": "午: Nét giữa thẳng đứng. 牛: Nét giữa có hai nét ngắn ngang (như sừng bò)."
+        },
+        {
+            "pair": "见 (jiàn) vs 贝 (bèi)",
+            "diff": "见: Có hai nét 'chân' dưới (như người quỳ thấy). 贝: Không có chân, hình vỏ sò."
+        },
+        {
+            "pair": "本 (běn) vs 木 (mù)",
+            "diff": "本: Có thêm nét ngang dưới gốc cây (gốc rễ). 木: Không có nét ngang dưới."
+        },
+        {
+            "pair": "田 (tián) vs 由 (yóu)",
+            "diff": "田: Nét dọc cắt qua giữa. 由: Nét dọc chỉ chạm đáy, không cắt qua."
+        },
+        {
+            "pair": "申 (shēn) vs 电 (diàn)",
+            "diff": "申: Nét dọc cắt qua hình vuông. 电: Có nét móc (tia sét) kéo dài xuống dưới."
+        },
+        {
+            "pair": "衣 (yī) vs 衤 (bộ y)",
+            "diff": "衣: Đứng độc lập hình áo đầy đủ. 衤: Dạng biến thể khi làm bộ (thiếu nét ngang dưới)."
+        },
+        {
+            "pair": "王 (wáng) vs 玉 (yù)",
+            "diff": "王: Ba nét ngang đều. 玉: Thêm chấm (hoặc nét ngắn) bên dưới như viên ngọc."
+        },
+        {
+            "pair": "休 (xiū) vs 体 (tǐ)",
+            "diff": "休: Người bên cây (nghỉ ngơi). 体: Người bên thân (xương thịt/thân thể)."
+        },
+        {
+            "pair": "早 (zǎo) vs 旱 (hàn)",
+            "diff": "早 (sớm), 旱 (khô hạn) - khác nhau ở bộ phận phía trên (Nhật vs Can)."
+        },
+        {
+            "pair": "休 (xiū) vs 体 (tǐ)",
+            "diff": "休 (nghỉ) là người tựa vào cây (Mộc), 体 (thân thể) là người và gốc (Bản)."
+        },
+        {
+            "pair": "酒 (jiǔ) vs 洒 (sǎ)",
+            "diff": "酒 (rượu) có bộ Dậu (bình rượu), 洒 (vẩy nước) có bộ Tây (phương tây)."
+        },
+        {
+            "pair": "渴 (kě) vs 喝 (hē)",
+            "diff": "渴 (khát) có bộ Thủy (nước), 喝 (uống) có bộ Khẩu (miệng)."
+        },
+        {
+            "pair": "蓝 (lán) vs 篮 (lán)",
+            "diff": "蓝 (màu xanh) bộ Thảo (cỏ), 篮 (cái giỏ) bộ Trúc (tre)."
+        },
+        {
+            "pair": "师 (shī) vs 帅 (shuài)",
+            "diff": "师 (thầy) có nét phẩy trên đầu bộ Cân, 帅 (đẹp trai) không có."
+        },
+        {
+            "pair": "狠 (hěn) vs 狼 (láng)",
+            "diff": "狠 (ác) có bộ Cấn (ngừng), 狼 (sói) có bộ Lương (tốt)."
+        },
+        {
+            "pair": "季 (jì) vs 李 (lǐ)",
+            "diff": "季 (mùa) bộ Hòa trên bộ Tử, 李 (họ Lý/mận) bộ Mộc trên bộ Tử."
+        },
+        {
+            "pair": "班 (bān) vs 斑 (bān)",
+            "diff": "班 (lớp) hai bộ Vương kẹp chữ Đao, 斑 (vằn) hai bộ Vương kẹp chữ Văn."
+        },
+        {
+            "pair": "孩 (hái) vs 该 (gāi)",
+            "diff": "孩 (trẻ con) bộ Tử, 该 (nên) bộ Ngôn."
+        },
+        {
+            "pair": "办 (bàn) vs 为 (wèi)",
+            "diff": "办 (làm) hai chấm hai bên hướng ra, 为 (vì) chấm trên và chấm trong."
+        },
+        {
+            "pair": "性 (xìng) vs 姓 (xìng)",
+            "diff": "性 (tính cách) bộ Tâm đứng, 姓 (họ) bộ Nữ."
+        },
+        {
+            "pair": "考 (kǎo) vs 老 (lǎo)",
+            "diff": "考 (thi) nét dưới là nét móc, 老 (già) nét dưới là bộ Chùy."
+        },
+        {
+            "pair": "币 (bì) vs 巾 (jīn)",
+            "diff": "币 (tiền) có nét phẩy trên đầu, 巾 (khăn) không có."
+        },
+        {
+            "pair": "免 (miǎn) vs 兔 (tù)",
+            "diff": "兔 (con thỏ) có thêm một dấu chấm (cái đuôi thỏ), 免 (miễn) thì không."
+        },
+        {
+            "pair": "仓 (cāng) vs 仑 (lún)",
+            "diff": "仓 (kho) nét dưới là bộ Kỷ, 仑 (luân) nét dưới là bộ Bi."
+        },
+        {
+            "pair": "盲 (máng) vs 肓 (huāng)",
+            "diff": "盲 (mù) bộ Vong trên bộ Mục (mắt), 肓 (hoang) bộ Vong trên bộ Nguyệt (thịt)."
+        },
+        {
+            "pair": "耍 (shuǎ) vs 要 (yào)",
+            "diff": "耍 (đùa) chữ Nhi trên chữ Nữ, 要 (muốn) chữ Á trên chữ Nữ."
+        },
+        {
+            "pair": "既 (jì) vs 即 (jí)",
+            "diff": "既 (đã) bên phải là bộ Vô, 即 (ngay lập tức) bên phải là bộ Tiết."
+        },
+        {
+            "pair": "亨 (hēng) vs 享 (xiǎng)",
+            "diff": "亨 (hanh thông) nét dưới là chữ Liễu, 享 (hưởng thụ) nét dưới là chữ Tử."
+        },
+        {
+            "pair": "候 (hòu) vs 侯 (hóu)",
+            "diff": "候 (khí hậu/đợi) có thêm một nét gạch đứng ở giữa chữ, 侯 (tước hầu) không có."
+        },
+        {
+            "pair": "戌 (xū) vs 戍 (shù) vs 戎 (róng) vs 戊 (wù)",
+            "diff": "戌 (tuất) có gạch ngang, 戍 (thú) có dấu chấm, 戎 (nhung) là giáo mác, 戊 (mậu) rỗng giữa."
+        },
+        {
+            "pair": "崇 (chóng) vs 祟 (suì)",
+            "diff": "崇 (cao/tôn sùng) bộ Sơn trên chữ Tông, 祟 (ám quẻ) chữ Xuất trên chữ Thị."
+        },
+        {
+            "pair": "丐 (gài) vs 丏 (miǎn)",
+            "diff": "丐 (ăn mày) nét dưới hở phải, 丏 (che lấp) nét dưới hở trái."
+        },
+        {
+            "pair": "拔 (bá) vs 拨 (bō)",
+            "diff": "拔 (nhổ) bên phải là chữ Hữu thêm chấm, 拨 (gảy) bên phải là chữ Phát."
+        },
+        {
+            "pair": "刺 (cì) vs 剌 (là)",
+            "diff": "刺 (đâm) bên trái là bộ Thứ, 剌 (ngỗ ngược) bên trái là bộ Thúc."
+        },
+        {
+            "pair": "准 (zhǔn) vs 淮 (huái)",
+            "diff": "准 (chuẩn) bên trái bộ Băng (2 chấm), 淮 (sông Hoài) bên trái bộ Thủy (3 chấm)."
+        },
+        {
+            "pair": "璧 (bì) vs 譬 (pì)",
+            "diff": "璧 (ngọc bích) dưới là bộ Ngọc, 譬 (ví dụ) dưới là bộ Ngôn."
+        },
+        {
+            "pair": "嬴 (yíng) vs 赢 (yíng) vs 羸 (léi)",
+            "diff": "Khác nhau ở bộ phận giữa dưới: Nữ (嬴), Bối (赢), Dương (羸)."
+        },
+        {
+            "pair": "辩 vs 辨 vs 瓣 vs 辫",
+            "diff": "Biện (Ngôn), Biện (Phân), Biện (Qua), Biện (Mịch)."
+        },
+        {
+            "pair": "廷 (tíng) vs 延 (yán)",
+            "diff": "廷 (triều đình) có bộ Nhâm (壬), 延 (kéo dài) có bộ Dẫn (廴)."
+        },
+        {
+            "pair": "汩 (gǔ) vs 汨 (mì)",
+            "diff": "汩 (chảy mạnh) dùng chữ Viết (rộng), 汨 (sông Mịch La) dùng chữ Nhật (hẹp)."
+        },
+        {
+            "pair": "荼 (tú) vs 茶 (chá)",
+            "diff": "荼 (khổ sở) có thêm một nét ngang ở giữa bộ phận dưới, 茶 (trà) không có."
+        },
+        {
+            "pair": "菅 (jiān) vs 管 (guǎn)",
+            "diff": "菅 (cỏ gian) bộ Thảo, 管 (quản lý) bộ Trúc."
+        },
+        {
+            "pair": "邸 (dǐ) vs 邸 (dǐ)",
+            "diff": "邸 (phủ đệ) bên phải bộ Ấp, 砥 (đá mài) bên trái bộ Thạch."
+        }
+    ],
+    "grammarMistakes": [
+        {
+            "title": "Trật tự từ Thời gian/Địa điểm",
+            "desc": "Tiếng Trung: Chủ ngữ + Thời gian + Địa điểm + Động từ. Người Việt hay bị ngược: 我吃饭在家 (Sai) -> 我在家吃饭 (Đúng)."
+        },
+        {
+            "title": "Phân biệt 二 (èr) và 两 (liǎng)",
+            "desc": "Dùng 两 trước lượng từ (hai cuốn sách: 两本书). Dùng 二 khi đếm số hoặc số thứ tự."
+        },
+        {
+            "title": "Dùng 'shì' với Tính từ",
+            "desc": "Không dùng 'shì' (là) trước tính từ. Sai: 我是忙. Đúng: 我很忙 (Dùng 'hěn' thay thế)."
+        },
+        {
+            "title": "Trợ từ nghi vấn 吗 (ma) vs 呢 (ne)",
+            "desc": "吗 dùng cho câu hỏi Có/Không. 呢 dùng cho câu hỏi tỉnh lược (Còn bạn? 你呢?) hoặc nhấn mạnh."
+        },
+        {
+            "title": "Bỏ quên Lượng từ",
+            "desc": "Tiếng Trung bắt buộc có lượng từ: Một người -> 一个人 (Sai: 一个)."
+        },
+        {
+            "title": "Phân biệt 再 (zài) và 又 (yòu)",
+            "desc": "再 (lại): hành động chưa xảy ra (Hẹn gặp lại: 再见). 又 (lại): hành động đã lặp lại rồi."
+        },
+        {
+            "title": "Vị trí của 都 (dōu) - Đều",
+            "desc": "都 luôn đứng trước động từ/tính từ: 我们都去 (Chúng tôi đều đi). Sai: 都我们去."
+        },
+        {
+            "title": "Cách dùng 'de' (的, 地, 得)",
+            "desc": "的 nối định ngữ và danh từ. 地 nối trạng ngữ và động từ. 得 nối động từ và bổ ngữ."
+        },
+        {
+            "title": "Câu chữ 把 (bǎ)",
+            "desc": "Dùng để nhấn mạnh sự tác động lên tân ngữ. Phải có thành phần phụ sau động từ (như 'le', 'wan')."
+        },
+        {
+            "title": "Câu bị động với 被 (bèi)",
+            "desc": "Cấu trúc: Đối tượng bị tác động + 被 + Chủ thể tác động + Động từ."
+        },
+        {
+            "title": "Phó từ mức độ hěn (很), fēicháng (非常)",
+            "desc": "Đứng trước tính từ. Lưu ý 'hěn' đôi khi chỉ mang tính liên kết chứ không hẳn là 'rất'."
+        },
+        {
+            "title": "Bổ ngữ kết quả (wán, dào, jiàn)",
+            "desc": "Đứng ngay sau động từ để chỉ kết quả hành động: 看见 (nhìn thấy), 做完 (làm xong)."
+        },
+        {
+            "title": "Bổ ngữ xu hướng (lái, qù)",
+            "desc": "Chỉ hướng hành động: 进来 (vào đây), 进去 (vào kia)."
+        },
+        {
+            "title": "Phân biệt 想 (xiǎng) và 要 (yào)",
+            "desc": "想: muốn (trong tâm trí, mong ước). 要: muốn/cần (quyết tâm thực hiện hoặc nhu cầu)."
+        },
+        {
+            "title": "Phân biệt 能 (néng), 会 (huì), 可以 (kěyǐ)",
+            "desc": "会: biết qua học tập. 能: năng lực tự nhiên/điều kiện cho phép. 可以: sự cho phép."
+        },
+        {
+            "title": "Lỗi dùng từ 刚 (vừa) và 刚才 (vừa mới)",
+            "desc": "刚 là phó từ. 刚才 là danh từ. Ví dụ: 我刚走 / 刚才我去学校了."
+        },
+        {
+            "title": "Sử dụng 'le' (了) không đúng chỗ",
+            "desc": "Không phải câu quá khứ nào cũng dùng 'le'. Nó chỉ sự thay đổi hoặc hoàn thành."
+        },
+        {
+            "title": "Lỗi dùng 还是 (háishì) và 或者 (huòzhě)",
+            "desc": "还是 dùng trong câu hỏi lựa chọn. 或者 dùng trong câu trần thuật."
+        },
+        {
+            "title": "Phân biệt 以后 (yǐhòu) và 后来 (hòulái)",
+            "desc": "Both 'later', but 后来 only for past sequence, 以后 can be future."
+        },
+        {
+            "title": "Vị trí của phó từ thời gian (yǐjīng, cángcáng)",
+            "desc": "Đứng sau chủ ngữ, trước động từ."
+        },
+        {
+            "title": "Lỗi dùng 'hěn' trước động từ tâm lý",
+            "desc": "Chỉ dùng 'hěn' với động từ tâm lý (xǐhuān, tǎoyàn), không dùng với động từ hành động."
+        },
+        {
+            "title": "Dùng 'yīdiǎnr' (一点儿) vs 'yǒudiǎnr' (有点儿)",
+            "desc": "一点儿 đứng sau tính từ (tốt hơn một chút). 有点儿 đứng trước tính từ (hơi mệt)."
+        },
+        {
+            "title": "Lỗi trùng điệp động từ",
+            "desc": "Dùng để làm nhẹ sắc thái (xử lý nhẹ nhàng). Ví dụ: 看看, 听听."
+        },
+        {
+            "title": "Câu hỏi chính phản (V không V)",
+            "desc": "Ví dụ: 你去不去? Không dùng thêm 'ma' ở cuối."
+        },
+        {
+            "title": "Lỗi dùng giới từ 'gēn' (跟)",
+            "desc": "跟 + ai + làm gì. Không nói: 我去学校跟朋友 (Sai)."
+        },
+        {
+            "title": "Lỗi dùng 'duì' (对) - Đối với",
+            "desc": "A 对 B + tính từ/động từ. Ví dụ: 他对我很好."
+        },
+        {
+            "title": "Phân biệt 'cì' (次) và 'biàn' (遍)",
+            "desc": "次: lần (số lần). 遍: lần (từ đầu đến cuối)."
+        },
+        {
+            "title": "Câu tồn tại (Trong phòng có...)",
+            "desc": "Địa điểm + 有/是 + Đối tượng."
+        },
+        {
+            "title": "Lỗi dùng 'tài...le' (太...了)",
+            "desc": "Dùng để cảm thán mức độ quá mức."
+        },
+        {
+            "title": "Sự khác nhau giữa 'shénme' và 'nǎge'",
+            "desc": "Shénme (cái gì - phạm vi rộng). Nǎge (cái nào - lựa chọn có giới hạn)."
+        },
+        {
+            "title": "Lỗi dùng phó từ 'jiù' (就) - Sớm/Nhanh",
+            "desc": "Chỉ hành động xảy ra sớm hơn dự kiến."
+        },
+        {
+            "title": "Lỗi dùng phó từ 'cái' (才) - Muộn",
+            "desc": "Chỉ hành động xảy ra muộn hơn dự kiến."
+        },
+        {
+            "title": "Cấu trúc 'yī...jiù...' (Vừa...đã...)",
+            "desc": "Chỉ hai hành động xảy ra nối tiếp nhau."
+        },
+        {
+            "title": "Cách dùng 'suǒyǐ' (cho nên) và 'yīnwèi' (bởi vì)",
+            "desc": "Nhớ dùng cặp 因為...所以."
+        },
+        {
+            "title": "Lỗi dùng 'suīrán...dànshì...' (Mặc dù...nhưng...)",
+            "desc": "Luôn đi kèm cặp."
+        },
+        {
+            "title": "Lỗi dùng 'rúguǒ...dehuà' (Nếu...thì)",
+            "desc": "Cấu trúc giả định phổ biến."
+        },
+        {
+            "title": "Cách dùng 'bǐ' (比) trong câu so sánh",
+            "desc": "A 比 B + Tính từ. Không dùng 'hěn' trước tính từ trong câu so sánh."
+        },
+        {
+            "title": "Cấu trúc so sánh 'yīyàng' (giống nhau)",
+            "desc": "A 跟 B 一样 + Tính từ."
+        },
+        {
+            "title": "Cách nói ngày tháng năm",
+            "desc": "Thứ tự: Năm -> Tháng -> Ngày (Ngược với tiếng Việt)."
+        },
+        {
+            "title": "Cách nói giờ giấc",
+            "desc": "Giờ + Điểm + Phút + Phân."
+        },
+        {
+            "title": "Lỗi dùng 'le' trong câu phủ định 'méiyǒu'",
+            "desc": "Không dùng 'le' ở cuối câu phủ định 'méiyǒu'."
+        },
+        {
+            "title": "Phân biệt 'zhēn' (thật) và 'hěn' (rất)",
+            "desc": "Zhēn dùng cho cảm thán, hěn dùng cho miêu tả bình thường."
+        },
+        {
+            "title": "Lỗi dùng 'kěshì' (nhưng) và 'dànshì' (nhưng)",
+            "desc": "Dànshì trang trọng hơn kěshì."
+        },
+        {
+            "title": "Cách dùng 'ne' trong câu hỏi chọn lựa",
+            "desc": "Sử dụng 'A, háishì B ne?'"
+        },
+        {
+            "title": "Lỗi dùng 'de' trong cấu trúc nhấn mạnh 'shì...de'",
+            "desc": "Dùng để nhấn mạnh thời gian, địa điểm, phương thức hành động đã xảy ra."
+        },
+        {
+            "title": "Vị trí của lượng từ thời gian (Duration)",
+            "desc": "Đứng sau động từ. Ví dụ: 我学了一个小时."
+        },
+        {
+            "title": "Lỗi dùng phó từ 'yě' (cũng)",
+            "desc": "Đứng sau chủ ngữ, trước động từ."
+        },
+        {
+            "title": "Lỗi dùng 'duō' (nhiều) trong câu hỏi mức độ",
+            "desc": "Ví dụ: 你多大? (Bạn bao nhiêu tuổi?)"
+        },
+        {
+            "title": "Sử dụng 'bié' (đừng) trong câu cầu khiến",
+            "desc": "Ví dụ: 别说话 (Đừng nói chuyện)."
+        },
+        {
+            "title": "Lỗi dùng 'yīzhí' (luôn luôn/thẳng)",
+            "desc": "Chỉ hành động liên tục không ngắt quãng."
+        }
+    ],
+    "practiceQuestions": [
+        {
+            "q": "Điền chữ đúng: 我___经去过北京了 (Tôi đã đi Bắc Kinh rồi)",
+            "options": [
+                "己",
+                "已",
+                "巳"
+            ],
+            "ans": "已"
+        },
+        {
+            "q": "Sắp xếp đúng: (1)在家 (2)我 (3)吃饭",
+            "options": [
+                "2-1-3",
+                "2-3-1"
+            ],
+            "ans": "2-1-3"
+        },
+        {
+            "q": "Ngày mai gặp lại: 明天___见",
+            "options": [
+                "又",
+                "再"
+            ],
+            "ans": "再"
+        },
+        {
+            "q": "Tôi ___ xong cơm rồi: 我吃___饭了",
+            "options": [
+                "了",
+                "完"
+            ],
+            "ans": "完"
+        },
+        {
+            "q": "Đọc đúng chữ 'Ngọc': ___佩",
+            "options": [
+                "王",
+                "玉"
+            ],
+            "ans": "玉"
+        },
+        {
+            "q": "Tôi khát quá, muốn ___ nước: 我渴了，想___水",
+            "options": [
+                "喝",
+                "渴"
+            ],
+            "ans": "喝"
+        },
+        {
+            "q": "Hôm nay tôi ___ mệt: 今天我___累",
+            "options": [
+                "有点儿",
+                "一点儿"
+            ],
+            "ans": "有点儿"
+        },
+        {
+            "q": "Chúng tôi ___ là bạn tốt: 我们___是好朋友",
+            "options": [
+                "都",
+                "也"
+            ],
+            "ans": "都"
+        },
+        {
+            "q": "Bạn tìm ai: 你___谁?",
+            "options": [
+                "我",
+                "找"
+            ],
+            "ans": "找"
+        },
+        {
+            "q": "Ngôi nhà này ___ to: 房字___大",
+            "options": [
+                "太",
+                "大"
+            ],
+            "ans": "太"
+        },
+        {
+            "q": "Chọn câu đúng: 'Tôi ở trường học'",
+            "options": [
+                "我也学校",
+                "我在学校"
+            ],
+            "ans": "我在学校"
+        },
+        {
+            "q": "Chọn lượng từ cho 'Sách': 一___书",
+            "options": [
+                "本",
+                "个"
+            ],
+            "ans": "本"
+        },
+        {
+            "q": "Đếm số: 1, ___, 3",
+            "options": [
+                "两",
+                "二"
+            ],
+            "ans": "二"
+        },
+        {
+            "q": "Vừa mới đây: ___我去跑步了",
+            "options": [
+                "刚",
+                "刚才"
+            ],
+            "ans": "刚才"
+        },
+        {
+            "q": "Hẹn gặp lại: ___会",
+            "options": [
+                "再",
+                "又"
+            ],
+            "ans": "再"
+        },
+        {
+            "q": "Cuối tuần vui vẻ: 周___快乐",
+            "options": [
+                "未",
+                "末"
+            ],
+            "ans": "末"
+        },
+        {
+            "q": "Con bò: ___",
+            "options": [
+                "牛",
+                "午"
+            ],
+            "ans": "牛"
+        },
+        {
+            "q": "Sức lực: ___量",
+            "options": [
+                "刀",
+                "力"
+            ],
+            "ans": "力"
+        },
+        {
+            "q": "Ngàn dặm: ___里",
+            "options": [
+                "千",
+                "干"
+            ],
+            "ans": "千"
+        },
+        {
+            "q": "Mua đồ: ___东西",
+            "options": [
+                "买",
+                "卖"
+            ],
+            "ans": "买"
+        },
+        {
+            "q": "Nói: ___曰",
+            "options": [
+                "日",
+                "曰"
+            ],
+            "ans": "曰"
+        },
+        {
+            "q": "Rễ cây: Căn ___",
+            "options": [
+                "木",
+                "本"
+            ],
+            "ans": "本"
+        },
+        {
+            "q": "Bản thân: 自___",
+            "options": [
+                "己",
+                "已"
+            ],
+            "ans": "己"
+        },
+        {
+            "q": "Kẻ sĩ: Chiến ___",
+            "options": [
+                "土",
+                "士"
+            ],
+            "ans": "士"
+        },
+        {
+            "q": "Thỏ con: 小___子",
+            "options": [
+                "免",
+                "兔"
+            ],
+            "ans": "兔"
+        },
+        {
+            "q": "Tôi ___ biết nói tiếng Trung: 我___说汉语",
+            "options": [
+                "能",
+                "会"
+            ],
+            "ans": "会"
+        },
+        {
+            "q": "Mặc dù...nhưng: 虽然...___",
+            "options": [
+                "还是",
+                "但是"
+            ],
+            "ans": "| nhưng | 但是"
+        },
+        {
+            "q": "Bạn ăn cơm ___ (Bạn đã ăn cơm chưa?)",
+            "options": [
+                "了 吗",
+                "呢"
+            ],
+            "ans": "了 吗"
+        },
+        {
+            "q": "Hôm nay ___ nóng (Hôm nay trời quá nóng)",
+            "options": [
+                "太大",
+                "太"
+            ],
+            "ans": "太"
+        },
+        {
+            "q": "Sắp xếp: (1)看见 (2)我 (3)老师",
+            "options": [
+                "2-1-3",
+                "3-1-2"
+            ],
+            "ans": "2-1-3"
+        },
+        {
+            "q": "Hai người: ___个人",
+            "options": [
+                "两",
+                "二"
+            ],
+            "ans": "两"
+        },
+        {
+            "q": "Tôi (đang) uống nước: 我___喝水",
+            "options": [
+                "有",
+                "在"
+            ],
+            "ans": "| đang | 在"
+        },
+        {
+            "q": "Uống rượu: 喝___",
+            "options": [
+                "酒",
+                "洒"
+            ],
+            "ans": "酒"
+        },
+        {
+            "q": "Sư phụ: ___傅",
+            "options": [
+                "师",
+                "帅"
+            ],
+            "ans": "师"
+        },
+        {
+            "q": "Anh ấy cao hơn tôi: 他___我高",
+            "options": [
+                "跟",
+                "比"
+            ],
+            "ans": "比"
+        },
+        {
+            "q": "Thối tiền: ___钱",
+            "options": [
+                "找",
+                "我"
+            ],
+            "ans": "找"
+        },
+        {
+            "q": "Đi vào: ___去",
+            "options": [
+                "人",
+                "入"
+            ],
+            "ans": "入"
+        },
+        {
+            "q": "Tháng sau: ___个月",
+            "options": [
+                "上",
+                "下"
+            ],
+            "ans": "下"
+        },
+        {
+            "q": "Cảm ơn bạn: ___你",
+            "options": [
+                "谢谢",
+                "再见"
+            ],
+            "ans": "谢谢"
+        },
+        {
+            "q": "Bạn là người ___ nào: 你是___国人?",
+            "options": [
+                "什么",
+                "哪"
+            ],
+            "ans": "| nước | 哪"
+        },
+        {
+            "q": "Gõ chữ 'Xanh': ___色",
+            "options": [
+                "蓝",
+                "篮"
+            ],
+            "ans": "蓝"
+        },
+        {
+            "q": "Nghỉ ngơi: ___息",
+            "options": [
+                "体",
+                "休"
+            ],
+            "ans": "休"
+        },
+        {
+            "q": "Họ của bạn: 你___什么?",
+            "options": [
+                "性",
+                "姓"
+            ],
+            "ans": "姓"
+        },
+        {
+            "q": "Bạn làm gì: 你___什么?",
+            "options": [
+                "为",
+                "办"
+            ],
+            "ans": "| làm | 办"
+        },
+        {
+            "q": "Ví dụ: ___如",
+            "options": [
+                "璧",
+                "譬"
+            ],
+            "ans": "譬"
+        },
+        {
+            "q": "Đá mài: ___石",
+            "options": [
+                "邸",
+                "砥"
+            ],
+            "ans": "砥"
+        },
+        {
+            "q": "Trà ngon: 好___",
+            "options": [
+                "荼",
+                "茶"
+            ],
+            "ans": "茶"
+        },
+        {
+            "q": "Lớp học: ___级",
+            "options": [
+                "班",
+                "斑"
+            ],
+            "ans": "班"
+        },
+        {
+            "q": "Nên làm: ___该",
+            "options": [
+                "孩",
+                "该"
+            ],
+            "ans": "该"
+        },
+        {
+            "q": "Sớm tinh mơ: ___晨",
+            "options": [
+                "早",
+                "旱"
+            ],
+            "ans": "早"
+        }
+    ]
+}
