@@ -1,15 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@400;700&display=swap');
 
 :root {
-    --bg-color: #050b18;
-    --panel-bg: rgba(15, 23, 42, 0.7);
-    --primary: #38bdf8;
-    --secondary: #818cf8;
-    --accent: #f472b6;
-    --text-main: #f8fafc;
-    --text-dim: #94a3b8;
-    --glass-border: rgba(255, 255, 255, 0.1);
-    --card-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    --bg-color: #f8fafc;
+    --panel-bg: rgba(255, 255, 255, 0.85);
+    --primary: #0ea5e9;
+    --secondary: #6366f1;
+    --accent: #ec4899;
+    --text-main: #0f172a;
+    --text-dim: #64748b;
+    --glass-border: rgba(0, 0, 0, 0.1);
+    --card-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.08);
+    --input-bg: rgba(0, 0, 0, 0.04);
     --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -27,8 +28,8 @@ body {
     overflow-x: hidden;
     min-height: 100vh;
     background-image:
-        radial-gradient(circle at 20% 20%, rgba(56, 189, 248, 0.05) 0%, transparent 40%),
-        radial-gradient(circle at 80% 80%, rgba(129, 140, 248, 0.05) 0%, transparent 40%);
+        radial-gradient(circle at 20% 20%, rgba(56, 189, 248, 0.15) 0%, transparent 40%),
+        radial-gradient(circle at 80% 80%, rgba(99, 102, 241, 0.15) 0%, transparent 40%);
 }
 
 .chinese {
@@ -64,7 +65,7 @@ body {
 }
 
 .btn-secondary {
-    background: rgba(255, 255, 255, 0.05);
+    background: var(--input-bg);
     color: var(--text-main);
     border: 1px solid var(--glass-border);
     padding: 12px 24px;
@@ -444,7 +445,7 @@ body {
 }
 
 .quiz-opt {
-    background: rgba(255, 255, 255, 0.03);
+    background: white;
     border: 1px solid var(--glass-border);
     padding: 18px;
     border-radius: 12px;
@@ -607,7 +608,7 @@ body {
 .lesson-list-scroll {
     max-height: 200px;
     overflow-y: auto;
-    background: rgba(0, 0, 0, 0.2);
+    background: var(--input-bg);
     border-radius: 10px;
     padding: 5px;
     display: flex;
@@ -647,14 +648,14 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 12px 20px;
-    background: rgba(255, 255, 255, 0.03);
+    background: var(--input-bg);
     border-radius: 15px;
     border: 1px solid var(--glass-border);
 }
 
 .mode-tabs {
     display: flex;
-    background: rgba(0, 0, 0, 0.2);
+    background: var(--input-bg);
     padding: 4px;
     border-radius: 12px;
     border: 1px solid var(--glass-border);
@@ -741,7 +742,7 @@ body {
     font-weight: 500;
     text-align: left;
     color: var(--text-main);
-    background: rgba(255, 255, 255, 0.02);
+    background: var(--input-bg);
     padding: 25px;
     border-radius: 18px;
     border: 1px solid var(--glass-border);
@@ -759,13 +760,13 @@ body {
 }
 
 .big-chinese-input {
-    background: rgba(0, 0, 0, 0.2);
+    background: white;
     border: 2px solid var(--glass-border);
     border-radius: 16px;
     padding: 18px;
     font-size: 2.2rem;
     text-align: center;
-    color: white;
+    color: var(--text-main);
     width: 100%;
     transition: var(--transition);
     font-family: 'Noto Sans SC', sans-serif;
@@ -844,7 +845,7 @@ body {
 }
 
 .fb-answer {
-    background: rgba(0, 0, 0, 0.3);
+    background: var(--input-bg);
     padding: 20px;
     border-radius: 14px;
     text-align: left;
@@ -868,7 +869,7 @@ body {
     position: absolute;
     top: 15px;
     right: 15px;
-    background: rgba(255, 255, 255, 0.05);
+    background: var(--input-bg);
     border: 1px solid var(--glass-border);
     color: var(--primary);
     width: 36px;
@@ -1002,7 +1003,7 @@ body {
 }
 
 .message-bubble.bot {
-    background: rgba(255, 255, 255, 0.05);
+    background: var(--input-bg);
     border: 1px solid var(--glass-border);
     color: var(--text-main);
     border-bottom-left-radius: 4px;
@@ -1068,7 +1069,7 @@ body {
     padding: 10px;
     display: flex;
     gap: 8px;
-    background: rgba(255, 255, 255, 0.03);
+    background: var(--input-bg);
     border-top: 1px solid var(--glass-border);
 }
 
@@ -1081,7 +1082,7 @@ body {
 
 .chat-input-area input {
     flex: 1;
-    background: rgba(255, 255, 255, 0.05);
+    background: white;
     border: 1px solid var(--glass-border);
     border-radius: 12px;
     padding: 10px 14px;
@@ -1139,7 +1140,7 @@ body {
 
 /* New Buttons and Tabs */
 .btn-mini-action {
-    background: rgba(255, 255, 255, 0.05);
+    background: var(--input-bg);
     border: 1px solid var(--glass-border);
     color: var(--text-dim);
     padding: 6px 12px;
@@ -1233,7 +1234,7 @@ body {
 }
 
 .mistake-item {
-    background: rgba(255, 255, 255, 0.03);
+    background: var(--input-bg);
     padding: 12px 15px;
     border-radius: 12px;
     display: flex;
@@ -1260,7 +1261,7 @@ body {
 .ans-revealed {
     margin-top: 10px;
     padding: 10px;
-    background: rgba(0, 0, 0, 0.2);
+    background: var(--input-bg);
     border-radius: 8px;
     font-size: 0.9rem;
     color: var(--primary);
