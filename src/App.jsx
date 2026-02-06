@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { BookOpen, Brain, Search, LayoutGrid, ChevronRight, ChevronLeft, RotateCcw, CheckCircle2, XCircle, Home, FileText, Download, Star, Volume2, MessageSquare, Send, Sparkles } from 'lucide-react';
 
 import hskData from './data/hsk1.json';
+import lessonsData from './data/lessons.json';
 
 // --- Header Component ---
 const Header = ({ currentView, setView }) => (
@@ -20,6 +21,9 @@ const Header = ({ currentView, setView }) => (
       </button>
       <button className={`nav-item ${currentView === 'chat' ? 'active' : ''}`} onClick={() => setView('chat')}>
         <MessageSquare size={18} /> <span className="nav-text">Chat</span>
+      </button>
+      <button className={`nav-item ${currentView === 'practice' ? 'active' : ''}`} onClick={() => setView('practice')}>
+        <Brain size={18} /> <span className="nav-text">Luyện tập</span>
       </button>
       <button className={`nav-item ${currentView === 'file' ? 'active' : ''}`} onClick={() => setView('file')}>
         <FileText size={18} /> <span className="nav-text">Tài liệu</span>
@@ -164,7 +168,7 @@ const Flashcard = ({ word, onNext, onPrev, isFirst, isLast }) => {
   );
 };
 
-// --- Quiz Component ---
+// --- Quiz View ---
 const QuizView = ({ words, onFinish }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [score, setScore] = useState(0);
@@ -271,13 +275,35 @@ const QuizView = ({ words, onFinish }) => {
   );
 };
 
-// --- Chat Component ---
+// --- Chat View ---
 const ChatView = () => {
   const [messages, setMessages] = useState([
-    { role: 'bot', content: '你好！我是你的中文助手。你想聊什么？', pinyin: 'Nǐ hǎo! Wǒ shì nǐ de Zhōngwén zhùshǒu. Nǐ xiǎng liáo shénme?', translation: 'Xin chào! Tôi là trợ lý tiếng Trung của bạn. Bạn muốn nói về chủ đề gì?' }
+    { role: 'bot', content: '你好！我是 your 中文助手. Bạn muốn luyện tập gì hôm nay?', pinyin: 'Nǐ hǎo! Wǒ shì nǐ de Zhōngwén zhùshǒu. Nǐ xiǎng liànxí shénme jīntiān?', translation: 'Xin chào! Tôi là trợ lý tiếng Trung của bạn. Hôm nay bạn muốn luyện tập gì?' }
   ]);
   const [input, setInput] = useState('');
   const [isTyping, setIsTyping] = useState(false);
+  const [isRiddleMode, setIsRiddleMode] = useState(false);
+  const [currentRiddle, setCurrentRiddle] = useState(null);
+
+  const startRiddle = () => {
+    setIsRiddleMode(true);
+    const allWords = hskData.flatMap(t => t.words);
+    const randomWord = allWords[Math.floor(Math.random() * allWords.length)];
+
+    let riddleText = `Đây là một từ vựng trong chủ đề "${hskData.find(t => t.words.includes(randomWord)).theme.split('. ')[1]}".\nNó có nghĩa là: "${randomWord.meaning}".`;
+    if (randomWord.example) {
+      riddleText += `\nVí dụ sử dụng: "${randomWord.example.split(' (')[0]}".`;
+    }
+    riddleText += `\nBạn hãy viết từ này bằng tiếng Trung (hoặc Pinyin) nhé!`;
+
+    setCurrentRiddle(randomWord);
+    const botMsg = {
+      role: 'bot',
+      content: riddleText,
+      translation: 'Hãy đoán xem đây là từ gì?'
+    };
+    setMessages(prev => [...prev, botMsg]);
+  };
 
   const speak = (text) => {
     if (!window.speechSynthesis) return;
@@ -300,39 +326,50 @@ const ChatView = () => {
     setInput('');
     setIsTyping(true);
 
-    setTimeout(() => {
-      let botResponse = "";
-      let feedback = "";
-      let pinyin = "";
-      let translation = "";
+    if (isRiddleMode && currentRiddle) {
+      setTimeout(() => {
+        const isCorrect = input.trim().toLowerCase() === currentRiddle.hanzi.toLowerCase() ||
+          input.trim().toLowerCase() === currentRiddle.pinyin.toLowerCase().replace(/\s/g, '');
 
+        let botResponse = "";
+        let feedback = "";
+
+        if (isCorrect) {
+          botResponse = `太棒了! Đúng rồi, đó chính là "${currentRiddle.hanzi}".`;
+          feedback = `Bạn giỏi lắm! ${currentRiddle.hanviet ? `Hán Việt: ${currentRiddle.hanviet}.` : ''}`;
+        } else {
+          botResponse = `Không đúng rồi! Đáp án là "${currentRiddle.hanzi}" (${currentRiddle.pinyin}).`;
+          feedback = `Đừng buồn, luyện tập thêm nhé!`;
+        }
+
+        const botMsg = {
+          role: 'bot',
+          content: botResponse,
+          feedback,
+          translation: isCorrect ? 'Tuyệt vời! Bạn đã trả lời đúng.' : 'Tiếc quá, hãy thử lại nhé.'
+        };
+        setMessages(prev => [...prev, botMsg]);
+        setIsTyping(false);
+        setIsRiddleMode(false);
+        setCurrentRiddle(null);
+        speak(botResponse);
+      }, 1000);
+      return;
+    }
+
+    setTimeout(() => {
+      let botResponse = "聽起來很有趣！你能多跟我说说吗？";
+      let pinyin = "Tīng qǐlái hěn yǒùqù! Nǐ néng duō gēn wǒ shuō shuō ma?";
+      let translation = "Nghe có vẻ thú vị đấy! Bạn có thể kể thêm cho tôi nghe không?";
 
       const lowerInput = input.toLowerCase();
-      if (lowerInput.includes('你好') || lowerInput.includes('nǐ hǎo')) {
+      if (lowerInput.includes('你好')) {
         botResponse = "你好！今天过得怎么样？";
         pinyin = "Nǐ hǎo! Jīntiān guò de zěnmeyàng?";
         translation = "Chào bạn! Hôm nay bạn thế nào?";
-        feedback = "Chào rất tốt! Bạn có thể thử: '最近怎么样？' (Dạo này thế nào?)";
-      } else if (lowerInput.includes('谢谢') || lowerInput.includes('xièxie')) {
-        botResponse = "不客气！我很乐意帮助你。";
-        pinyin = "Bú kèqi! Wǒ hěn lèyì bāngzhù nǐ.";
-        translation = "Không có gì! Tôi rất vui được giúp bạn.";
-        feedback = "Rất chuẩn! Trong khẩu ngữ cũng có thể nói: '没事' (méshì).";
-      } else if (lowerInput.includes('再见') || lowerInput.includes('zàijiàn')) {
-        botResponse = "再见！下次聊。";
-        pinyin = "Zàijiàn! Xiàcì liáo.";
-        translation = "Tạm biệt! Hẹn gặp lại lần sau.";
-        feedback = "Tạm biệt chính xác! Người trẻ Trung Quốc hay nói '拜拜' (bàibài).";
-      } else {
-        botResponse = "听起来很有趣！你能多跟我说说吗？";
-        pinyin = "Tīng qǐlái hěn yǒùqù! Nǐ néng duō gēn wǒ shuō shuō ma?";
-        translation = "Nghe có vẻ thú vị đấy! Bạn có thể kể thêm cho tôi nghe không?";
-        feedback = "Câu ổn. Hãy thử thêm các đại từ '我', '你' để tự nhiên hơn.";
       }
 
-
-      const botMsg = { role: 'bot', content: botResponse, pinyin, translation, feedback };
-
+      const botMsg = { role: 'bot', content: botResponse, pinyin, translation };
       setMessages(prev => [...prev, botMsg]);
       setIsTyping(false);
       speak(botResponse);
@@ -348,7 +385,6 @@ const ChatView = () => {
               <p className={msg.role === 'bot' ? 'chinese' : ''}>{msg.content}</p>
               {msg.pinyin && <p className="msg-pinyin">{msg.pinyin}</p>}
               {msg.translation && <p className="msg-translation">{msg.translation}</p>}
-
               {msg.role === 'bot' && (
                 <button className="msg-audio" onClick={() => speak(msg.content)}>
                   <Volume2 size={14} />
@@ -356,18 +392,19 @@ const ChatView = () => {
               )}
             </div>
             {msg.feedback && (
-              <motion.div initial={{ opacity: 0, x: -10 }} animate={{ opacity: 1, x: 0 }} className="msg-feedback">
-                <Sparkles size={14} className="sparkle" /> {msg.feedback}
-              </motion.div>
+              <div className="msg-feedback"><Sparkles size={14} /> {msg.feedback}</div>
             )}
           </div>
         ))}
-        {isTyping && <div className="typing-indicator">Đối phương đang soạn tin...</div>}
+        {isTyping && <div className="typing-indicator">Đang soạn tin...</div>}
       </div>
       <div className="chat-input-area">
+        <button className={`btn-mode ${isRiddleMode ? 'active' : ''}`} onClick={startRiddle}>
+          <Brain size={16} /> Đố vui
+        </button>
         <input
           type="text"
-          placeholder="Nhắn tin (Tiếng Trung/Pinyin)..."
+          placeholder="Nhắn tin..."
           value={input}
           onChange={(e) => setInput(e.target.value)}
           onKeyDown={(e) => e.key === 'Enter' && handleSend()}
@@ -378,7 +415,270 @@ const ChatView = () => {
   );
 };
 
-// --- Main App Component ---
+// --- Practice View ---
+const PracticeView = () => {
+  const [practiceType, setPracticeType] = useState(null); // 'vocabulary' or 'lesson'
+  const [selectionPhase, setSelectionPhase] = useState(true);
+  const [mode, setMode] = useState('pinyin'); // 'pinyin' or 'vietnamese'
+  const [practiceData, setPracticeData] = useState([]);
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [userInput, setUserInput] = useState('');
+  const [feedback, setFeedback] = useState(null);
+  const [isGrading, setIsGrading] = useState(false);
+  const [score, setScore] = useState(0);
+  const [isFinished, setIsFinished] = useState(false);
+
+  const startPractice = (type, specificLesson = null) => {
+    setPracticeType(type);
+    setSelectionPhase(false);
+
+    if (type === 'vocabulary') {
+      const allWords = hskData.flatMap(t => t.words);
+      const selected = allWords.sort(() => 0.5 - Math.random()).slice(0, 10);
+      setPracticeData(selected);
+    } else {
+      if (specificLesson === 'random') {
+        const random = lessonsData[Math.floor(Math.random() * lessonsData.length)];
+        setPracticeData([random]);
+      } else if (specificLesson) {
+        setPracticeData([specificLesson]);
+      } else {
+        setPracticeData(lessonsData);
+      }
+    }
+    setCurrentIndex(0);
+    setUserInput('');
+    setFeedback(null);
+    setScore(0);
+    setIsFinished(false);
+  };
+
+  const handleCheck = () => {
+    if (!userInput.trim()) return;
+    setIsGrading(true);
+    const currentItem = practiceData[currentIndex];
+
+    // Simulate AI Grading delay
+    setTimeout(() => {
+      const normalizedInput = userInput.trim().replace(/\s/g, '');
+      const targetHanzi = currentItem.hanzi.replace(/\s/g, '');
+
+      let isCorrect = normalizedInput === targetHanzi;
+      let gradingFeedback = "";
+      let gradingScore = 0;
+
+      if (practiceType === 'vocabulary') {
+        if (mode === 'pinyin') {
+          gradingFeedback = isCorrect ? "Rất chính xác!" : `Chưa đúng. Đáp án: ${currentItem.hanzi}`;
+          gradingScore = isCorrect ? 100 : 0;
+        } else {
+          if (isCorrect) {
+            gradingScore = 100;
+            gradingFeedback = "Hoàn hảo! Bạn viết đúng rồi.";
+          } else if (currentItem.hanzi.includes(userInput.trim()) || userInput.trim().includes(currentItem.hanzi)) {
+            isCorrect = true;
+            gradingScore = 80;
+            gradingFeedback = "Gần đúng! Bạn đang đi đúng hướng.";
+          } else {
+            gradingScore = 0;
+            gradingFeedback = `Chưa đúng. Chữ Hán là: ${currentItem.hanzi}`;
+          }
+        }
+      } else {
+        // Lesson grading logic (paragraph)
+        if (isCorrect) {
+          gradingScore = 100;
+          gradingFeedback = "Tuyệt vời! Bạn đã gõ chính xác toàn bộ đoạn văn.";
+        } else {
+          const similarity = calculateSimilarity(normalizedInput, targetHanzi);
+          if (similarity > 0.8) {
+            isCorrect = true;
+            gradingScore = 90;
+            gradingFeedback = "Rất tốt! Bạn chỉ sai một vài chỗ nhỏ thôi.";
+          } else if (similarity > 0.5) {
+            isCorrect = true;
+            gradingScore = 60;
+            gradingFeedback = "Khá tốt! Bạn đã nắm được phần lớn đoạn văn.";
+          } else {
+            isCorrect = false;
+            gradingScore = 20;
+            gradingFeedback = "Cố gắng lên! Có vẻ bạn cần ôn tập kỹ hơn đoạn này.";
+          }
+        }
+      }
+
+      setFeedback({ isCorrect, text: gradingFeedback, score: gradingScore, original: currentItem.hanzi });
+      if (isCorrect) setScore(prev => prev + 1);
+      setIsGrading(false);
+    }, 1000);
+  };
+
+  const calculateSimilarity = (s1, s2) => {
+    let matches = 0;
+    const len = Math.min(s1.length, s2.length);
+    for (let i = 0; i < len; i++) {
+      if (s1[i] === s2[i]) matches++;
+    }
+    return matches / Math.max(s1.length, s2.length);
+  };
+
+  const speak = (text) => {
+    if (!window.speechSynthesis) return;
+    window.speechSynthesis.cancel();
+    const utterance = new SpeechSynthesisUtterance(text);
+    const voices = window.speechSynthesis.getVoices();
+    const zhVoice = voices.find(v => v.lang.includes('zh-CN')) || voices.find(v => v.lang.includes('zh'));
+    if (zhVoice) utterance.voice = zhVoice;
+    utterance.lang = 'zh-CN';
+    utterance.rate = 0.8;
+    window.speechSynthesis.speak(utterance);
+  };
+
+  const handleNext = () => {
+    if (currentIndex + 1 < practiceData.length) {
+      setCurrentIndex(currentIndex + 1);
+      setUserInput('');
+      setFeedback(null);
+    } else {
+      setIsFinished(true);
+    }
+  };
+
+  if (selectionPhase) {
+    return (
+      <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} className="practice-selection">
+        <h2 className="selection-title">Bạn muốn luyện tập gì?</h2>
+        <div className="selection-grid">
+          <motion.div whileHover={{ scale: 1.02 }} className="selection-card glass-panel" onClick={() => startPractice('vocabulary')}>
+            <div className="sel-icon vocab"><BookOpen size={32} /></div>
+            <h3>Từ vựng ngẫu nhiên</h3>
+            <p>Luyện 10 từ vựng HSK1 ngẫu nhiên từ thư viện.</p>
+          </motion.div>
+          <motion.div whileHover={{ scale: 1.02 }} className="selection-card glass-panel">
+            <div className="sel-icon lesson"><Brain size={32} /></div>
+            <h3>Luyện Bài khóa</h3>
+            <p>Luyện gõ các đoạn văn ngắn từ bài học.</p>
+            <div className="lesson-sub-menu">
+              <button className="btn-mini-choice" onClick={() => startPractice('lesson', 'random')}>Ngẫu nhiên 1 bài</button>
+              <div className="lesson-list-scroll">
+                {lessonsData.map(l => (
+                  <button key={l.id} className="lesson-item-btn" onClick={() => startPractice('lesson', l)}>
+                    {l.title}
+                  </button>
+                ))}
+              </div>
+            </div>
+          </motion.div>
+        </div>
+      </motion.div>
+    );
+  }
+
+  if (isFinished) {
+    return (
+      <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="results-panel glass-panel">
+        <Sparkles size={48} className="sparkle" />
+        <h2>Hoàn thành!</h2>
+        <div className="score-text">
+          {practiceType === 'vocabulary' ? (
+            <>Bạn đạt <span>{score}</span> / {practiceData.length}</>
+          ) : (
+            <>Bạn đã luyện xong bài khóa!</>
+          )}
+        </div>
+        <button className="btn-primary" onClick={() => setSelectionPhase(true)} style={{ marginTop: '20px', width: '100%' }}>
+          Quay lại chọn chế độ
+        </button>
+      </motion.div>
+    );
+  }
+
+  const currentItem = practiceData[currentIndex];
+  if (!currentItem) return <div className="loading">Đang tải...</div>;
+
+  return (
+    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="practice-view">
+      <div className="practice-header-nav glass-panel">
+        <button className="btn-back-selection" onClick={() => setSelectionPhase(true)}>
+          <ChevronLeft size={16} /> Thoát
+        </button>
+        <div className="mode-tabs">
+          <button className={`mode-tab ${mode === 'pinyin' ? 'active' : ''}`} onClick={() => { setMode('pinyin'); setFeedback(null); }}>Pinyin Mode</button>
+          <button className={`mode-tab ${mode === 'vietnamese' ? 'active' : ''}`} onClick={() => { setMode('vietnamese'); setFeedback(null); }}>Vietnamese Mode</button>
+        </div>
+        <div className="counter">Bài {currentIndex + 1} / {practiceData.length}</div>
+      </div>
+
+      <div className={`practice-card-main glass-panel ${practiceType === 'lesson' ? 'wide' : ''}`}>
+        <div className="q-section">
+          <span className="q-label">{mode === 'pinyin' ? 'Gõ chữ Hán cho Pinyin:' : 'Gõ chữ Hán cho nghĩa:'}</span>
+          <h2 className={`q-text ${practiceType === 'lesson' ? 'lesson-text' : 'chinese'}`}>
+            {mode === 'pinyin' ? currentItem.pinyin : currentItem.meaning}
+          </h2>
+          {practiceType === 'vocabulary' && mode === 'pinyin' && <p className="q-sub">({currentItem.meaning})</p>}
+        </div>
+
+        <div className="i-section">
+          {practiceType === 'lesson' ? (
+            <textarea
+              className="big-chinese-input lesson-textarea chinese"
+              placeholder="Gõ toàn bộ đoạn văn vào đây..."
+              value={userInput}
+              onChange={(e) => setUserInput(e.target.value)}
+              disabled={!!feedback || isGrading}
+              autoFocus
+            />
+          ) : (
+            <input
+              type="text"
+              className="big-chinese-input chinese"
+              placeholder="Gõ chữ Hán..."
+              value={userInput}
+              onChange={(e) => setUserInput(e.target.value)}
+              onKeyDown={(e) => e.key === 'Enter' && !feedback && !isGrading && handleCheck()}
+              disabled={!!feedback || isGrading}
+              autoFocus
+            />
+          )}
+
+          <div className="i-actions">
+            {!feedback ? (
+              <button className="btn-primary" onClick={handleCheck} disabled={!userInput.trim() || isGrading} style={{ width: '100%' }}>
+                {isGrading ? <RotateCcw size={18} className="spin" /> : 'Kiểm tra'}
+              </button>
+            ) : (
+              <button className="btn-primary" onClick={handleNext} style={{ width: '100%' }}>
+                {currentIndex + 1 === practiceData.length ? 'Xong' : 'Tiếp theo'} <ChevronRight size={18} />
+              </button>
+            )}
+          </div>
+        </div>
+
+        <AnimatePresence>
+          {feedback && (
+            <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} className={`feedback-box ${feedback.isCorrect ? 'correct' : 'wrong'}`}>
+              <div className="fb-top">
+                <div className="fb-icon">{feedback.isCorrect ? <CheckCircle2 size={24} /> : <XCircle size={24} />}</div>
+                <div className="fb-info">
+                  <span className="fb-status">{feedback.isCorrect ? 'Tốt!' : 'Cần cố gắng'}</span>
+                  <p className="fb-detail">{feedback.text}</p>
+                </div>
+                <div className="fb-score">+{feedback.score}</div>
+              </div>
+              <div className="fb-answer">
+                <div className="ans-tag">Đáp án chuẩn:</div>
+                <div className="ans-val chinese">{feedback.original}</div>
+                <button className="btn-audio-mini" onClick={() => speak(feedback.original)}><Volume2 size={16} /></button>
+              </div>
+            </motion.div>
+          )}
+        </AnimatePresence>
+      </div>
+    </motion.div>
+  );
+};
+
+// --- App Component ---
 function App() {
   const [view, setView] = useState('home');
   const [selectedTheme, setSelectedTheme] = useState(null);
@@ -394,79 +694,38 @@ function App() {
   return (
     <div className="app">
       <Header currentView={view} setView={setView} />
-
       <main className="main-content">
         <AnimatePresence mode="wait">
-          {view === 'home' && (
-            <HomeView key="home" themes={hskData} onSelectTheme={startFlashcards} />
-          )}
-
-          {view === 'file' && <FileView key="file" />}
-
-          {view === 'chat' && <ChatView key="chat" />}
-
+          {view === 'home' && <HomeView themes={hskData} onSelectTheme={startFlashcards} />}
           {view === 'flashcards' && selectedTheme && (
-            <motion.div
-              key="flashcards"
-              initial={{ opacity: 0, x: 20 }}
-              animate={{ opacity: 1, x: 0 }}
-              exit={{ opacity: 0, x: -20 }}
-            >
-              <div className="view-header">
-                <button className="btn-back" onClick={() => setView('home')}><ChevronLeft size={18} /> Home</button>
-                <h2>{selectedTheme.theme.split('. ')[1]}</h2>
-              </div>
-              <Flashcard
-                word={selectedTheme.words[flashcardIndex]}
-                isFirst={flashcardIndex === 0}
-                isLast={flashcardIndex === selectedTheme.words.length - 1}
-                onNext={() => setFlashcardIndex(flashcardIndex + 1)}
-                onPrev={() => setFlashcardIndex(flashcardIndex - 1)}
-              />
-              <div style={{ display: 'flex', justifyContent: 'center', marginTop: '30px' }}>
-                <button className="btn-secondary" onClick={() => setView('quiz')} style={{ gap: '8px' }}>
-                  <CheckCircle2 size={18} /> Làm Quiz chủ đề này
-                </button>
-              </div>
-            </motion.div>
+            <Flashcard
+              word={selectedTheme.words[flashcardIndex]}
+              onNext={() => setFlashcardIndex(prev => prev + 1)}
+              onPrev={() => setFlashcardIndex(prev => prev - 1)}
+              isFirst={flashcardIndex === 0}
+              isLast={flashcardIndex === selectedTheme.words.length - 1}
+            />
           )}
-
           {view === 'quiz' && (
-            <div key="quiz">
-              {quizScore === null ? (
-                <>
-                  <div className="view-header">
-                    <button className="btn-back" onClick={() => setView('home')}><ChevronLeft size={18} /> Home</button>
-                    <h2>Quiz: {selectedTheme?.theme?.split('. ')[1] || 'Tổng hợp'}</h2>
-                  </div>
-                  <QuizView
-                    words={selectedTheme?.words || hskData[0].words}
-                    onFinish={(score) => setQuizScore(score)}
-                  />
-                </>
-              ) : (
-                <motion.div
-                  initial={{ scale: 0.9, opacity: 0 }}
-                  animate={{ scale: 1, opacity: 1 }}
-                  className="results-panel glass-panel"
-                >
-                  <Star className="star-icon" size={48} />
-                  <h2>Tuyệt vời!</h2>
-                  <p className="score-text">Bạn đạt <span>{quizScore}</span> / {selectedTheme?.words.length} câu</p>
-                  <div style={{ display: 'flex', gap: '10px', justifyContent: 'center' }}>
-                    <button className="btn-primary" onClick={() => setQuizScore(null)}><RotateCcw size={16} /> Thử lại</button>
-                    <button className="btn-secondary" onClick={() => setView('home')}><Home size={16} /> Về Home</button>
-                  </div>
-                </motion.div>
-              )}
+            <QuizView
+              words={hskData.flatMap(t => t.words).sort(() => 0.5 - Math.random()).slice(0, 10)}
+              onFinish={score => { setQuizScore(score); setView('results'); }}
+            />
+          )}
+          {view === 'results' && (
+            <div className="results-panel glass-panel">
+              <CheckCircle2 size={48} color="var(--primary)" />
+              <h2>Hoàn thành!</h2>
+              <div className="score-text">Điểm: <span>{quizScore}</span> / 10</div>
+              <button className="btn-primary" onClick={() => setView('home')}>Home</button>
             </div>
           )}
+          {view === 'chat' && <ChatView />}
+          {view === 'practice' && <PracticeView />}
+          {view === 'file' && <FileView />}
         </AnimatePresence>
       </main>
-
-      <footer className="footer">
-        <p>HSK1 Master - Thú zị lên! ✨</p>
-      </footer>
+      <footer className="footer"><p>HSK1 Master © 2024</p></footer>
     </div>
   );
 }
